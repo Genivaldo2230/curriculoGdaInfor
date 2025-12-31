@@ -1,12 +1,29 @@
-import { Component, signal } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { TestService } from './models/services/test/test';
+import { Footer } from "./pages/footer/footer";
+import { Header } from './pages/header/header';
+import { ContatoComponent } from "./pages/contato/contato";
+import { NavbarComponent } from './pages/navbar/navbar';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [CommonModule, RouterOutlet, Footer, Header, NavbarComponent, ContatoComponent],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
-export class App {
-  protected readonly title = signal('curriculoGdaInfor');
+export class AppComponent implements OnInit {
+  respostaApi = '';
+
+  constructor(private readonly testService: TestService) {}
+
+  ngOnInit(): void {
+    this.testService.testarApi().subscribe({
+      next: (res: any) => this.respostaApi = res,
+      error: (err: any) => console.error('Erro ao testar API:', err)
+    });
+  }
+
 }

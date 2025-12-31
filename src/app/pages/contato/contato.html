@@ -1,0 +1,29 @@
+<label class="empresa">Gda Infor.Desenv.
+  <h1>Contato Gda Infor.Desenv</h1>
+</label>
+
+<form [formGroup]="contatoForm" (ngSubmit)="enviar()">
+  <div>
+    <label for="nome">Nome:</label>
+    <input id="nome" type="text" formControlName="nome" title="Nome" placeholder="Digite seu nome">
+  </div>
+
+  <div>
+    <label>Email:</label>
+    <input type="email" formControlName="email" title="Email" placeholder="Digite seu email">
+  </div>
+
+  <div>
+    <label>Mensagem:</label>
+    <textarea formControlName="mensagem" title="Mensagem" placeholder="Digite sua mensagem"></textarea>
+  </div>
+
+ <button type="submit" [disabled]="contatoForm.invalid || carregando">
+  {{ carregando ? 'Enviando...' : 'Enviar Contato' }}
+</button>
+</form>
+<div class="fr-agradcimento">
+  <p>Obrigado por entra em contato !</p>
+  <p>Em breve retornaremos seu contato.</p>
+
+</div>

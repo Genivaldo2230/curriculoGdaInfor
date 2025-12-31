@@ -1,0 +1,23 @@
+<div class="container-lista">
+  <h2>Contatos Salvos</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Mensagem</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let contato of contatos">
+        <td>{{ contato.nome }}</td>
+        <td>{{ contato.email }}</td>
+        <td>{{ contato.mensagem }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Caso não haja contatos -->
+  <p *ngIf="contatos.length === 0">Nenhum contato cadastrado ainda.</p>
+</div>

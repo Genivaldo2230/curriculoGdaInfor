@@ -1,0 +1,40 @@
+<div class="img-fundo">
+  <img [src]="imgFundo" alt="Fundo de tecnologia com tema de DNA" width="1920" height="1080" />
+</div>
+
+<div class="container-navbar">
+  <nav class="navbar">
+    <div class="logo">GDA INFORMATICA</div>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+  </nav>
+  <div class="nav-links">
+
+    <nav>
+      <a [routerLink]="['/home']" class="home-link">Home</a> |
+      <a [routerLink]="['/curriculum']" class="curriculum-link"> Curriculum </a>
+      <a [routerLink]="['/portfolio']" class="Portifólio-link">Portfólio</a>|
+      <a [routerLink]="['/fale-comigo']" class="fale-comigo-link">Fale Comigo</a> |
+      <a [routerLink]="['/lista-contatos']" class="lista-contatos-link">Painel Admin</a>
+    </nav>
+  </div>
+</div>
+
+<div class="container-form">
+  <h2>Fale Comigo</h2>
+  <div class="fundo" [style.background-image]="'url(' + imgFundo + ')'">
+
+    <form [formGroup]="contatoForm" (ngSubmit)="enviar()">
+      <input formControlName="nome" placeholder="Nome" />
+      <input formControlName="email" placeholder="Email" />
+      <textarea formControlName="mensagem" placeholder="Mensagem"></textarea>
+
+      <button type="submit" [disabled]="contatoForm.invalid">Enviar Contato</button>
+    </form>
+
+
+    <div *ngIf="enviado" class="sucesso">
+      <h2>Mensagem salva no banco com sucesso!</h2>
+      <button (click)="enviado = true">Enviar outra</button>
+    </div>
+  </div>

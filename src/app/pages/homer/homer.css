@@ -1,0 +1,60 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+body{
+  margin: 0;
+  padding: 0;
+  /* background-image: url('/assets/imagens/maoNoEcra.jpg'); */
+}
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Container do vídeo */
+.video-background {
+  position: fixed; /* ocupa toda a tela */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* fica atrás do conteúdo */
+}
+
+/* Vídeo ajustado ao fundo */
+#bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* cobre toda a área sem distorcer */
+}
+
+/* Conteúdo por cima do vídeo */
+.conteudo {
+  position: relative;
+  z-index: 1; /* fica acima do vídeo */
+  color: white;
+  text-align: center;
+  margin-top: 20%;
+}
+
+.conteudo h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.conteudo p {
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}

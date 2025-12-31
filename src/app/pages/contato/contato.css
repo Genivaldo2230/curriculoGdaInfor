@@ -1,0 +1,94 @@
+/* Estilo geral */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Título da empresa */
+.empresa {
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.empresa h1 {
+  font-size: 2rem;
+  margin-top: 5px;
+  color: #0077cc;
+}
+
+/* Formulário */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #444;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+/* Botão */
+form button {
+  background-color: #0077cc;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+form button:hover:not(:disabled) {
+  background-color: #005fa3;
+}
+
+/* Mensagem de agradecimento */
+.fr-agradcimento {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: #e6f7ff;
+  padding: 20px;
+  border-left: 5px solid #0077cc;
+  border-radius: 4px;
+  color: #333;
+  font-size: 1rem;
+  text-align: center;
+}
