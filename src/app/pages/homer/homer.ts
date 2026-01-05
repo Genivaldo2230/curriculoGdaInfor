@@ -15,5 +15,11 @@ import { NavbarComponent } from '../navbar/navbar';
 })
 export class HomerComponent {
 
-    imagemUrl = '/assets/imagens/maoNoEcra.jpg';
+
+  // Se for vídeo
+   videoUrl: string = 'assets/videos/fundo.mp4';
+
+   // Se for imagem
+   imgUrl: string = 'assets/images/fundo.jpg';
+
 }

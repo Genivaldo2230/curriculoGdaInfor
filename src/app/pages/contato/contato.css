@@ -1,11 +1,15 @@
-/* Estilo geral */
-body {
+*{
+  box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f4f4f4;
   margin: 0;
   padding: 20px;
 }
-
+body{
+  margin: 0;
+  padding: 0;
+  /* background-image: url('/assets/imagens/maoNoEcra.jpg'); */
+}
 /* Título da empresa */
 .empresa {
   display: block;

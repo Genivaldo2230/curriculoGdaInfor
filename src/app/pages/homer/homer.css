@@ -1,52 +1,81 @@
 *{
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f4f4;
   margin: 0;
   padding: 20px;
+  /* Removido o background-color daqui para não cobrir o vídeo */
+}
+.html{
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Evita scroll vertical */
+  border: 4px solid #000000;
+  margin: 0;
+  padding: 0;
+  background-image: url(../../../assets/imagens/digital-de-circulo.jpg);
 }
 body{
   margin: 0;
   padding: 0;
-  /* background-image: url('/assets/imagens/maoNoEcra.jpg'); */
+  background-color: #0077cc; /* Cor de fundo caso o vídeo falhe */
+  overflow-x: hidden; /* Evita scroll horizontal */
+  border: 4px solid #000000;
+
 }
+
 header {
-  background-color: #0077cc;
-  color: white;
+  color: rgba(255, 255, 255, 0.983);
   padding: 10px 0;
   text-align: center;
   width: 100%;
   height: auto;
+  position: relative;
+  z-index: 2; /* Garante que o header fique no topo */
 }
-body {
-  margin: 0;
-  padding: 0;
+
+/* ===== Fundo (Imagem Opcional) ===== */
+.img-fundo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2; /* Fica atrás do vídeo */
 }
+
+.img-fundo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
 /* Container do vídeo */
 .video-background {
-  position: fixed; /* ocupa toda a tela */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  z-index: -1; /* fica atrás do conteúdo */
+  z-index: -1; /* Fica atrás de todo o conteúdo */
 }
 
 /* Vídeo ajustado ao fundo */
 #bg-video {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* cobre toda a área sem distorcer */
+  object-fit: cover;
 }
 
 /* Conteúdo por cima do vídeo */
 .conteudo {
   position: relative;
-  z-index: 1; /* fica acima do vídeo */
+  z-index: 1; /* Alterado para 1 para ficar ACIMA do vídeo */
   color: white;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 0%;
+  margin-bottom: 17em;
 }
 
 .conteudo h1 {
@@ -57,4 +86,12 @@ body {
 .conteudo p {
   font-size: 1.5rem;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+
+.background-video {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }

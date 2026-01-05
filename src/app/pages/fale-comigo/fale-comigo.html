@@ -1,23 +1,16 @@
-<div class="img-fundo">
-  <img [src]="imgFundo" alt="Fundo de tecnologia com tema de DNA" width="1920" height="1080" />
-</div>
+<div class="containe-fl-comigo">
 
-<div class="container-navbar">
-  <nav class="navbar">
+  <div class="img-fundo">
+    <img [src]="imgFundo" alt="Fundo de tecnologia com tema de DNA" width="1920" height="1080" />
+  </div>
+
+  <div class="container-navbar">
+    <nav class="navbar">
     <div class="logo">GDA INFORMATICA</div>
     <input type="checkbox" id="menu-toggle" />
     <label for="menu-toggle" class="menu-icon">&#9776;</label>
   </nav>
-  <div class="nav-links">
-
-    <nav>
-      <a [routerLink]="['/home']" class="home-link">Home</a> |
-      <a [routerLink]="['/curriculum']" class="curriculum-link"> Curriculum </a>
-      <a [routerLink]="['/portfolio']" class="Portifólio-link">Portfólio</a>|
-      <a [routerLink]="['/fale-comigo']" class="fale-comigo-link">Fale Comigo</a> |
-      <a [routerLink]="['/lista-contatos']" class="lista-contatos-link">Painel Admin</a>
-    </nav>
-  </div>
+  
 </div>
 
 <div class="container-form">
@@ -38,3 +31,5 @@
       <button (click)="enviado = true">Enviar outra</button>
     </div>
   </div>
+
+</div>

@@ -1,5 +1,18 @@
 
+.container-fale-comigo {
+  font-family: 'Arial', sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+.container-fale-comigo h2 {
+  text-align: center;
+
+}
 /* ===== Fundo ===== */
 .img-fundo {
   position: fixed;
@@ -19,15 +32,12 @@
 
 /* ===== Navbar ===== */
 .container-navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.7);
-  padding: 15px 30px;
-  position: fixed;
-  top: 0;
-  width: 94%;
-  z-index: 10;
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 30px;
+    width: 79.2rem;
 }
 
 .navbar .logo {

@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ContatoService, Contato } from '../../models/services/contato.service';
-import { NavbarComponent } from '../navbar/navbar';
-import { HomerComponent } from '../homer/homer';
+
 
 @Component({
   selector: 'app-lista-contatos',
   standalone: true,
-  imports: [CommonModule, NavbarComponent,HomerComponent],
+  imports: [CommonModule],
   template: `
     <div class="container">
       <h2>Mensagens Recebidas (H2 Database)</h2>
