@@ -1,3 +1,48 @@
+📘 Projeto Curriculum GdaInfor
+
+🚀 Sobre o Projeto
+Este projeto foi desenvolvido com Angular CLI 20 no Front-End e Spring Boot no Back-End, como parte de um processo de aprendizado e construção de aplicações modernas.
+O sistema permite o registro de contatos (nome, e-mail e mensagem), que são persistidos inicialmente em um banco de dados H2 Console, com previsão de futura migração para MySQL ou PostgreSQL.
+
+🛠️ Tecnologias Utilizadas
+• 	Front-End: Angular CLI 20
+• 	Back-End: Spring Boot
+• 	Banco de Dados: H2 Console (planejado upgrade para MySQL/PostgreSQL)
+• 	Integração: API REST para persistência de dados
+
+📂 Funcionalidades
+• 	Página de Contatos com formulário para nome, e-mail e mensagem
+• 	Persistência dos dados no banco H2
+• 	Estrutura preparada para migração futura para MySQL/PostgreSQL
+• 	Integração entre Angular e Spring Boot
+
+⚙️ Instalação e Execução
+🔧 Pré-requisitos
+• 	Node.js e Angular CLI instalados
+• 	Java JDK 17+
+• 	Maven ou Gradle
+▶️ Passos para rodar o projeto
+1. 	Clonar o repositório
+
+2. 	Instalar dependências do Front-End
+
+3. 	Rodar o Back-End
+
+4. 	Acessar a aplicação
+• 	Front-End: 
+• 	Back-End API: 
+• 	H2 Console: 
+
+📌 Futuras Melhorias
+• 	Migração do banco de dados para MySQL/PostgreSQL
+• 	Implementação de autenticação e autorização
+• 	Deploy em ambiente de nuvem (AWS/Azure/Heroku)
+
+👨‍💻 Autor
+Projeto desenvolvido por Genivaldo como parte de estudos e prática em Angular e Spring Boot.
+
+
+
 # CurriculoGdaInfor
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.10.

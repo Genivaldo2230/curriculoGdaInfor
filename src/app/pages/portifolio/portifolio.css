@@ -1,0 +1,365 @@
+.conteiner {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.container-main{
+    position: relative;
+    width: 100%;
+    height: 207vh;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  color: white;
+  z-index: -1;
+}
+h1 {
+  text-align: center;
+}
+.section {
+  margin-bottom: 51px;
+  min-width: 100%;
+  text-align: center;
+  font-family: initial;
+}
+p.section-title {
+    font-size: 20px;
+}
+
+#p {
+  margin-bottom: 49px;
+  background-color: #9d9b940a;
+  cursor: pointer;
+  border: 3px solid #e3e3de21;
+  padding: 17.5px;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.section:hover {
+  margin-bottom: 20px;
+
+
+}
+
+.section-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.section-content {
+  margin-left: 20px;
+}
+
+.obejtivo-junior {
+  white-space-collapse: preserve-breaks;
+}
+
+.obejtivo-junior>p {
+  padding: 0px;
+  margin: 5px;
+  line-height: 1.5;
+  /* Aumenta o espaçamento entre as linhas */
+  word-spacing: 5px;
+  /* Aumenta o espaçamento entre as palavras */
+  letter-spacing: 2px;
+  /* Aumenta o espaçamento entre as letras */
+  border-block-end: 3px solid aliceblue;
+  text-align: start;
+}
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+  border: 2px solid blue;
+  font-family: Arial, sans-serif;
+}
+
+.skills.show {
+  max-height: 1000px;
+  transition: max-height 0.3s ease-in-out;
+
+}
+
+.show-more {
+  border: 2px solid blue;
+  text-align: center;
+  cursor: pointer;
+}
+
+.profile-pic {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #06050e21;
+  padding: 4px;
+  text-align: center;
+}
+
+/* Estilos para os ícones de redes sociais */
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons li a {
+  color: #333;
+  font-size: 20px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #637ab9;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons li a:hover {
+  background-color: #333;
+  color: #112f56;
+}
+
+/**
+btn mostraanimado
+ */
+.show-more {
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+}
+
+.show-more::after {
+  content: '+';
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.show-more.show::after {
+  transform: rotate(45deg);
+}
+
+.show-more:hover::after {
+  color: blue;
+}
+
+a {
+  color: rgb(61, 204, 48);
+}
+
+.historia {
+  line-height: 1.6;
+  color: #e0e0e0;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 25px;
+  border-left: 4px solid #6eff25;
+  /* Cor destaque do seu projeto */
+  border-radius: 0 15px 15px 0;
+}
+
+.tech-badge-container {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: #1e107c;
+  color: #6eff25;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: 1px solid #6eff25;
+}
+
+.learning-status {
+  margin-top: 20px;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #3dcc30;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+strong {
+  color: #6eff25;
+}
+
+/* portifolio.component.css */
+.skills-carousel-container {
+  padding: 40px 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.carousel-content {
+  position: relative;
+  width: 300px;
+  /* Largura do card */
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-card {
+  position: absolute;
+  width: 100%;
+  padding: 30px;
+  background: linear-gradient(145deg, #1e107c, #015f55);
+  border: 2px solid #6eff25;
+  border-radius: 15px;
+  color: white;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.5s ease-in-out;
+  pointer-events: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.skill-card.active {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+  z-index: 2;
+}
+
+.card-icon {
+  font-size: 3rem;
+  color: #6eff25;
+  margin-bottom: 15px;
+}
+
+.nav-btn {
+    background: none;
+    border: 2px solid #efeceb14;
+    color: #efeceb;
+    font-size: 2.5rem;
+    padding: 29px 22px;
+    cursor: pointer;
+    border-radius: 98px;
+    transition: 0.3s;
+    min-width: 5%;
+}
+
+.nav-btn:hover {
+    background: #000000;
+    color: #ebe4e4;
+}
+
+/* Indicadores (Pontinhos) */
+.dots {
+  margin-top: 20px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #555;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active-dot {
+  background: #6eff25;
+  width: 25px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.resumo-profissional {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #00000c8b;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  border: 2px solid #eaecea;
+}
+
+.resumo-profissional h2 {
+  color: #a1bdd8;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.resumo-profissional p {
+  margin-bottom: 15px;
+  color: #f3eeee;
+  font-size: 1rem;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.main-body {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.background-video {
+  position: fixed; /* fixa no fundo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* fica atrás de tudo */
+}
+
+#backgroundVideo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* cobre toda tela sem distorcer */
+}
+
+/* Ajuste da overlay */
+.overlay[_ngcontent-ng-c996816137] {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+    height: 236vh;
+    z-index: 1;
+}

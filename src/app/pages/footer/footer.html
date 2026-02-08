@@ -1,28 +1,38 @@
 <footer class="main-footer">
   <div class="footer-content">
-    <a href="mailto:seu.email@exemplo.com">seu.email@exemplo.com</a>
+
     <div class="social-links-container">
       <h3>Conecte-se comigo</h3>
 
       <div class="social-icons">
-        <a [href]="whatsappUrl" target="_blank" aria-label="WhatsApp">
+        <a class="whatsapp" [href]="whatsappUrl" target="_blank" aria-label="WhatsApp">
           <fa-icon [icon]="['fab', 'whatsapp']" size="lg"></fa-icon> WhatsApp
         </a>
 
-        <a [href]="linkedinUrl" target="_blank" aria-label="LinkedIn">
+        <a class="linkedin" [href]="linkedinUrl" target="_blank" aria-label="LinkedIn">
           <fa-icon [icon]="['fab', 'linkedin']" size="lg"></fa-icon> LinkedIn
         </a>
 
-        <a [href]="githubUrl" target="_blank" aria-label="GitHub">
+        <a class="github" [href]="githubUrl" target="_blank" aria-label="GitHub">
           <fa-icon [icon]="['fab', 'github']" size="lg"></fa-icon> GitHub
         </a>
+
+        <a class="youtube" [href]="youtubeUrl" target="_blank" aria-label="YouTube">
+          <fa-icon [icon]="['fab', 'youtube']" size="lg"></fa-icon> YouTube
+        </a>
+
+
+        <a class="email" [href]="emailUrl" target="_blank" aria-label="Email">
+          <fa-icon [icon]="['fas', 'envelope']" size="lg"></fa-icon> Email
+        </a>
+
       </div>
     </div>
   </div>
-</footer>
 
-<footer class="main-footer">
-  <div class="footertext-rodape">
-    <p>&copy; {{ currentYear }} Gda Informática. Desenvolvimento Web | Todos os direitos reservados.</p>
-  </div>
+  <footer class="main-footer">
+    <div class="footertext-rodape">
+      <p>&copy; {{ currentYear }} Gda Informática. Desenvolvimento Web | Todos os direitos reservados.</p>
+    </div>
+  </footer>
 </footer>

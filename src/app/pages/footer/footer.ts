@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { CommonModule } from '@angular/common'; // Para usar diretivas básicas como *ngIf, etc.
 import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome'; // Importa a biblioteca de ícones
-import { faLinkedin, faGithub, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faWhatsapp, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
@@ -23,9 +24,12 @@ export class Footer implements OnInit { // Mantendo o nome da classe como 'Foote
   whatsappUrl: string = `https://wa.me/${this.phoneNumber}`;
   linkedinUrl: string = 'https://www.linkedin.com/in/genivaldo-anjos/';
   githubUrl: string = 'https://github.com/Genivaldo2230';
+  youtubeUrl: string = 'https://www.youtube.com/@genivaldoalvesdosanjos';
+  emailUrl: string = 'mailto:genivaldo@example.com';
 
   constructor(library: FaIconLibrary) {
-    library.addIcons(faLinkedin, faGithub, faWhatsapp);
+    library.addIcons(faLinkedin, faGithub, faWhatsapp, faEnvelope, faYoutube);
+
   }
 
   ngOnInit(): void {

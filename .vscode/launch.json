@@ -3,6 +3,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "GdainforApiApplication",
+      "request": "launch",
+      "mainClass": "br.com.gdainfor.GdainforApiApplication",
+      "projectName": "gdainfor.api"
+    },
+    {
       "name": "ng serve",
       "type": "chrome",
       "request": "launch",

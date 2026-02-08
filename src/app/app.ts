@@ -4,13 +4,12 @@ import { RouterOutlet } from '@angular/router';
 import { TestService } from './models/services/test/test';
 import { Footer } from "./pages/footer/footer";
 import { Header } from './pages/header/header';
-import { ContatoComponent } from "./pages/contato/contato";
 import { NavbarComponent } from './pages/navbar/navbar';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, Footer, Header, NavbarComponent, ContatoComponent],
+  imports: [CommonModule, RouterOutlet, Footer, Header, NavbarComponent],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })

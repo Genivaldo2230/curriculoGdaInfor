@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { RouterLink } from '@angular/router';
+
 import { ContatoService } from '../../models/services/contato.service';
 
 @Component({
   selector: 'app-fale-comigo',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule, RouterLink],
+  imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './fale-comigo.html',
   styleUrls: ['./fale-comigo.css']
 })

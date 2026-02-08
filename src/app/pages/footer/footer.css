@@ -1,10 +1,21 @@
-.main-footer {
-  background: #2222224e;
-  color: #fff;
-  padding: 0px;
+/* .main-footer {
+  background: #222222;
+  color: #e1d5d5;
+  padding: 1px;
   text-align: center;
-  
+} */
+.main-footer{
+    background: #2222221f;
+    color: #e1d5d5;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #ffffff1c;
+    border-radius: 36px;
+    margin: 21px;
+    position: relative;
+    z-index: 1;
 }
+
 
 .footer-content {
   max-width: 900px;
@@ -13,14 +24,16 @@
 
 .social-links-container {
   margin-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  padding: 19px;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
 
-.social-icons {
-  display: grid;
-  grid-template-columns: repeat(3, auto); /* desktop: 3 colunas */
-  gap: 20px;
-  justify-content: center;
-}
+
 
 .social-icons a {
   color: #fff;
@@ -29,8 +42,83 @@
   transition: color 0.3s ease;
 }
 
+:host {
+  display: block;
+}
+
+/* Variáveis de cor só para este componente */
+:host {
+  --color-whatsapp: #25D366;
+  --color-linkedin: #0077B5;
+  --color-github: #eee8e8;
+  --color-email: #FF5722;
+  --color-youtube: #FF0000;
+}
+
+.main-footer {
+  background: #22222266;
+  color: #e1d5d5;
+  padding: 1px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.social-icons {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 2em;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff; /* cor padrão */
+}
+
+/* Cada ícone já começa com sua cor fixa */
+.social-icons a.whatsapp {
+  color: var(--color-whatsapp);
+}
+
+.social-icons a.linkedin {
+  color: var(--color-linkedin);
+}
+
+.social-icons a.github {
+  color: var(--color-github);
+}
+
+.social-icons a.email {
+  color: var(--color-email);
+}
+
+/* Efeito hover: aumenta o tamanho */
 .social-icons a:hover {
-  color: #00d4ff;
+  transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .social-icons {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (max-width: 600px) {
+  .social-icons {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 }
 
 /* Rodapé inferior */

@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink } from '@angular/router';
-import { NavbarComponent } from '../navbar/navbar';
 
 // Se você tiver outros componentes no Homer, importe-os:
 // import { Footer } from '../footer/footer';
@@ -14,12 +12,19 @@ import { NavbarComponent } from '../navbar/navbar';
   styleUrls: ['./homer.css']
 })
 export class HomerComponent {
+ngOnInit() {
+  const video = document.getElementById('backgroundVideo') as HTMLVideoElement;
+  if (window.innerWidth < 768) {
+    video.style.objectFit = 'contain';
+  } else {
+    video.style.objectFit = 'cover';
+  }
+}
 
+  // // Se for vídeo
+  //  videoUrl: string = 'assets/videos/fundo.mp4';
 
-  // Se for vídeo
-   videoUrl: string = 'assets/videos/fundo.mp4';
-
-   // Se for imagem
-   imgUrl: string = 'assets/images/fundo.jpg';
+  //  // Se for imagem
+  // imgUrl: string = '../../../assets/images/wallpp-portifolio.jpg';
 
 }

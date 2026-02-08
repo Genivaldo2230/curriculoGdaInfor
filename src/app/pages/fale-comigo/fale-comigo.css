@@ -1,193 +1,225 @@
-
-.container-fale-comigo {
-  font-family: 'Arial', sans-serif;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f4f4f4;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* Base da navbar */
+.container-navbar {
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  padding: 14px 20px;
+  display: flex;
+  justify-content: center;
 }
 
-.container-fale-comigo h2 {
+.navbar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 16px;
+  max-width: 1200px;
+  width: 100%;
+  color: #00fff7;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 61px;
   text-align: center;
-
 }
-/* ===== Fundo ===== */
+
+/* Links */
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #e0f7ff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav-links a:hover {
+  background: rgba(0, 255, 247, 0.12);
+  color: #00fff7;
+}
+
+/* Ícone hambúrguer */
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #00fff7;
+  display: none;
+  /* desktop: escondido */
+}
+
+/* Responsivo: tablet/celular */
+/* @media (max-width: 768px) {
+  .navbar {
+    grid-template-columns: auto auto;
+  } */
+
+  .menu-icon {
+    display: block;
+    /* mostrar no mobile */
+    justify-self: end;
+  }
+
+  .nav-links {
+    grid-column: 1 / -1;
+    display: none;
+    /* escondido por padrão */
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 12px;
+    background: rgba(20, 20, 40, 0.85);
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 0 14px rgba(0, 255, 255, 0.15);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+  }
+
+  /* Toggle via checkbox: quando marcado, mostra o menu */
+  #menu-toggle:checked~.nav-links {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 12px;
+    border: 1px solid rgba(0, 255, 247, 0.18);
+    border-radius: 10px;
+  }
+
+
+.containe-fl-comigo {
+  position: relative;
+  min-height: 66vh;
+  background-color: #0f20278f;
+}
+
 .img-fundo {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.img-fundo img {
-  width: 100%;
-  height: 100%;
+  height: 102vh;
   object-fit: cover;
-  filter: brightness(0.7);
+  z-index: -1;
+  /* opacity: 0.18; */
+  pointer-events: none;
 }
 
-/* ===== Navbar ===== */
-.container-navbar {
-     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 15px 30px;
-    width: 79.2rem;
-}
-
-.navbar .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #00d4ff;
-}
-
-.nav-links {
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #00d4ff;
-}
-
-/* Menu responsivo */
-.menu-icon {
-  display: none;
-  font-size: 2rem;
-  color: #fff;
-  cursor: pointer;
-}
-
-#menu-toggle {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0.9);
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
-    padding: 20px;
-  }
-
-  #menu-toggle:checked ~ .nav-links {
-    display: flex;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-}
-
-/* ===== Formulário ===== */
+/* Formulário futurista (mantendo seu estilo) */
 .container-form {
   max-width: 600px;
-  margin: 120px auto 50px auto;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  margin: 40px auto;
+  padding: 24px;
+  background: rgba(20, 20, 40, 0.85);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
 }
 
 .container-form h2 {
   text-align: center;
-  margin-bottom: 20px;
-  color: #333;
+  font-family: 'Orbitron', sans-serif;
+  color: #00fff7;
+  margin-bottom: 16px;
 }
 
-.container-form label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #444;
-}
-
-.container-form input,
-.container-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-.container-form textarea {
-  resize: vertical;
-  min-height: 100px;
-}
-.container-form button {
-  width: 100%;
-  padding: 12px;
-  background: #00d4ff;
+.container-form form input,
+.container-form form textarea {
+  min-width: 83%;
+  padding: 25px;
+  margin-bottom: 36px;
   border: none;
-  border-radius: 5px;
+  border-radius: 17px;
+  background: #0f111a;
+  ;
   color: #fff;
+  font-size: 19px;
+  margin: 32px;
+  padding: 15px;
+}
+
+form.ng-untouched.ng-pristine.ng-invalid {
+  margin: 8px;
+  padding: 24px;
+  max-width: 100%;
+}
+
+.container-form form input:focus,
+.container-form form textarea:focus {
+  background: #2a2e3f;
+  outline: none;
+}
+
+.container-form button[type="submit"] {
+  width: 35%;
+  padding: 13px;
+  background: linear-gradient(90deg, #00fff7, #0077ff);
+  border: none;
+  border-radius: 8px;
+  color: #0f111a;
   font-weight: bold;
   font-size: 1rem;
   cursor: pointer;
-  /* transition: background 0.3s, transform 0.2s; */
+  transition: transform 0.25s ease;
+  left: 151px;
+  position: relative;
 }
 
-/* Efeito ao passar o mouse */
-.container-form button:hover {
-  background: #0099cc;   /* tom mais escuro */
-  transform: scale(1.02); /* leve aumento */
+.container-form button[type="submit"]:hover {
+  transform: scale(1.04);
 }
 
-/* Efeito ao clicar */
-.container-form button:active {
-  background: #0077aa;   /* ainda mais escuro */
-  transform: scale(0.98); /* leve redução */
-}
-
-/* Acessibilidade: foco via teclado */
-.container-form button:focus {
-  outline: 2px solid #005f80;
-  outline-offset: 2px;
-}
-/* .container-form button {
-  width: 100%;
-  padding: 12px;
-  background: #00d4ff;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  font-weight: bold;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.container-form button:hover {
-  background: #0099cc;
-}
-
-.container-form button:disabled {
-  background: #aaa;
-  cursor: not-allowed;
-} */
-
-/* Mensagem de sucesso */
-.container-form div p {
+/* Sucesso */
+.sucesso {
   text-align: center;
-  color: green;
-  font-weight: bold;
-  margin-top: 15px;
+  margin-top: 20px;
+  background: #1c1f2b;
+  padding: 18px;
+  border-radius: 10px;
+  color: #00ff99;
+  box-shadow: 0 0 10px rgba(0, 255, 153, 0.3);
 }
+
+.sucesso button {
+  padding: 10px 18px;
+  background: #00ff99;
+  border: none;
+  border-radius: 6px;
+  color: #0f111a;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Media Query para Celulares e Tablets */
+/* Estilo Desktop (o que você já tem) */
+.curriculo-card {
+  background-color: rgb(255 255 255 / 59%);
+  margin-top: 99px;
+  max-width: 800px;
+  max-height: 873px;
+  padding: 10px;
+  border-radius: 27px;
+  border: 2px solid #ffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- MEDIA QUERY PARA MOBILE --- */
+/* --- MEDIA QUERY PARA MOBILE --- */
+
