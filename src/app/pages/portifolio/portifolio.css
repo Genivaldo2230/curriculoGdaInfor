@@ -1,31 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  }
 .conteiner {
   width: 100%;
   max-width: 940px;
   margin: 0 auto;
   padding: 20px;
+  color: white;
 }
-.container-main{
-    position: relative;
-    width: 100%;
-    height: 207vh;
+
+.conteiner #text-center {
+  text-align: center;
+
 }
+
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
   color: white;
   z-index: -1;
+
 }
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;   /* cobre toda a tela */
+  background-position: center; /* centraliza */
+  background-repeat: no-repeat; /* não repete */
+}
+.background-image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    /* width: 100%; */
+}
+
 h1 {
   text-align: center;
 }
+
 .section {
   margin-bottom: 51px;
   min-width: 100%;
   text-align: center;
   font-family: initial;
 }
+
+
 p.section-title {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 #p {
@@ -53,8 +82,10 @@ p.section-title {
   margin-left: 20px;
 }
 
-.obejtivo-junior {
-  white-space-collapse: preserve-breaks;
+
+.objetivo-junior {
+  white-space: normal;   /* controla quebra de linha */
+  word-break: break-word; /* quebra palavras longas */
 }
 
 .obejtivo-junior>p {
@@ -69,6 +100,7 @@ p.section-title {
   border-block-end: 3px solid aliceblue;
   text-align: start;
 }
+
 .skills {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -263,20 +295,20 @@ strong {
 }
 
 .nav-btn {
-    background: none;
-    border: 2px solid #efeceb14;
-    color: #efeceb;
-    font-size: 2.5rem;
-    padding: 29px 22px;
-    cursor: pointer;
-    border-radius: 98px;
-    transition: 0.3s;
-    min-width: 5%;
+  background: none;
+  border: 2px solid #efeceb14;
+  color: #efeceb;
+  font-size: 2.5rem;
+  padding: 29px 22px;
+  cursor: pointer;
+  border-radius: 98px;
+  transition: 0.3s;
+  min-width: 5%;
 }
 
 .nav-btn:hover {
-    background: #000000;
-    color: #ebe4e4;
+  background: #000000;
+  color: #ebe4e4;
 }
 
 /* Indicadores (Pontinhos) */
@@ -324,11 +356,13 @@ strong {
   color: #f3eeee;
   font-size: 1rem;
 }
+
 html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 0%;
+    width: 100%;
+    background: #06050e;
 }
 
 .main-body {
@@ -339,27 +373,30 @@ html, body {
 }
 
 .background-video {
-  position: fixed; /* fixa no fundo */
+  position: fixed;
+  /* fixa no fundo */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* fica atrás de tudo */
+  z-index: -1;
+  /* fica atrás de tudo */
 }
 
 #backgroundVideo {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* cobre toda tela sem distorcer */
+  object-fit: cover;
+  /* cobre toda tela sem distorcer */
 }
 
 /* Ajuste da overlay */
 .overlay[_ngcontent-ng-c996816137] {
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    text-align: center;
-    padding-top: 50px;
-    height: 236vh;
-    z-index: 1;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  height: 236vh;
+  z-index: 1;
 }

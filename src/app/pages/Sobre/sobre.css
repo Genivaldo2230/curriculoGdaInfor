@@ -1,24 +1,34 @@
+.html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 0%;
+  width: 100%;
+  background: #06050e;
+}
+
 .container-main {
   position: relative;
   width: 100%;
   height: 100vh;
 }
-.background-image{
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 132%;
+
+.background-image {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 132%;
 }
 
 .overlay {
   background-color: rgba(0, 0, 0, 0.4);
   color: white;
   text-align: center;
-  padding-top: 50px;
-  height: 100vh;
+  /* margin: -1vh; */
 }
+
 /* homer.css */
-.curriculo-container {
+.curriculo-container[_ngcontent-ng-c1364799695] {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,9 +36,10 @@
   background: url(/assets/imagens/maoNoEcra.jpg) no-repeat center center;
   background-size: cover;
   padding: 20px;
-  bottom: 7em;
+  bottom: 3em;
   position: relative;
 }
+
 .curriculo-card {
   background-color: rgb(255 255 255 / 59%);
   margin-top: -6px;
@@ -40,10 +51,11 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .curriculo-card h1 {
   font-size: 2.2rem;
   margin-bottom: 10px;
-  color:#2c3e50;
+  color: #2c3e50;
 }
 
 .curriculo-card h2 {
@@ -64,69 +76,95 @@
 /* --- ESTILO PARA CELULAR (Media Query) --- */
 @media screen and (max-width: 768px) {
 
-    /* 1. Ajuste do Container Principal */
-    .container-main {
-        overflow-x: hidden; /* Evita que a página "dance" para os lados */
-    }
+  /* 1. Ajuste do Container Principal */
+  .container-main {
+    overflow-x: hidden;
+    /* Evita que a página "dance" para os lados */
+  }
 
-    .overlay {
-        padding: 20px 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .curriculo-container[_ngcontent-ng-c1364799695] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(/assets/imagens/maoNoEcra.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    bottom: -9em;
+    position: relative;
+  }
 
-    /* 2. Títulos de Boas-vindas */
-    .overlay h1 {
-        font-size: 1.8rem;
-        text-align: center;
-        margin-top: 20px;
-    }
+  .overlay {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .overlay h2 {
-        font-size: 1.2rem;
-        text-align: center;
-        margin-bottom: 20px;
-    }
+  /* 2. Títulos de Boas-vindas */
+  .overlay h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 20px;
+  }
 
-    /* 3. O Card do Currículo (O ponto principal) */
-    .curriculo-card[_ngcontent-ng-c2118152265], .curriculo-card {
-        width: 95%;            /* Quase toda a largura da tela */
-        max-width: 100%;
-        height: auto;          /* Deixa a altura se ajustar ao texto */
-        max-height: none;      /* Remove qualquer trava de altura anterior */
-        margin: 20px auto;     /* Centraliza e dá espaço no topo/base */
-        padding: 20px;         /* Espaço interno para o texto não encostar na borda */
-        border-radius: 20px;   /* Cantos um pouco menos arredondados fica melhor no mobile */
-        background-color: rgba(255, 255, 255, 0.85); /* Aumentei um pouco a opacidade para ler melhor */
+  .overlay h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
-        /* Ajuste de Texto interno */
-        overflow-y: visible;
-        box-sizing: border-box;
-    }
-    .overlay{
+  /* 3. O Card do Currículo (O ponto principal) */
+  .curriculo-card,
+  .curriculo-card {
+    width: 95%;
+    /* Quase toda a largura da tela */
+    max-width: 100%;
+    height: auto;
+    /* Deixa a altura se ajustar ao texto */
+    max-height: none;
+    /* Remove qualquer trava de altura anterior */
+    margin: 20px auto;
+    /* Centraliza e dá espaço no topo/base */
+    padding: 20px;
+    /* Espaço interno para o texto não encostar na borda */
+    border-radius: 20px;
+    /* Cantos um pouco menos arredondados fica melhor no mobile */
+    background-color: rgb(255 255 255 / 32%);
+    /* Aumentei um pouco a opacidade para ler melhor */
+
+    /* Ajuste de Texto interno */
+    overflow-y: visible;
+    box-sizing: border-box;
+  }
+
+  .overlay {
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
     text-align: center;
     padding-top: 50px;
     height: 100vh;
-}
+  }
 
-    /* 4. Textos dentro do Card */
-    .curriculo-card h1 {
-        font-size: 1.5rem;
-        line-height: 1.2;
-    }
+  /* 4. Textos dentro do Card */
+  .curriculo-card h1 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
 
-    .curriculo-card h2 {
-        font-size: 1.1rem;
-        color: #333;
-    }
+  .curriculo-card h2 {
+    font-size: 1.1rem;
+    color: #333;
+  }
 
-    .curriculo-card p {
-        font-size: 1rem;       /* Tamanho de leitura confortável */
-        line-height: 1.5;      /* Espaçamento entre linhas */
-        text-align: left;      /* Texto alinhado à esquerda é melhor para ler no celular */
-        margin-bottom: 15px;
-    }
+  .curriculo-card p {
+    font-size: 1rem;
+    /* Tamanho de leitura confortável */
+    line-height: 1.5;
+    /* Espaçamento entre linhas */
+    text-align: left;
+    /* Texto alinhado à esquerda é melhor para ler no celular */
+    margin-bottom: 15px;
+    color: white;
+  }
 }
