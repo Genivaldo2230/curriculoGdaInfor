@@ -26,6 +26,10 @@ import { ContatoService, Contato } from '../../models/services/contato.service';
   styleUrls: ['./lista-contatos.css']
 })
 export class ListaContatosComponent implements OnInit {
+// app.component.ts
+corFundo = 'lightgreen';
+
+
   contatos: Contato[] = [];
 
   constructor(private contatoService: ContatoService) {}
@@ -39,5 +43,5 @@ export class ListaContatosComponent implements OnInit {
       this.contatos = dados;
     });
   }
-  
+
 }

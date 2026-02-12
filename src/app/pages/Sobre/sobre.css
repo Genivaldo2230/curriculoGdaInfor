@@ -82,7 +82,7 @@ body {
     /* Evita que a página "dance" para os lados */
   }
 
-  .curriculo-container[_ngcontent-ng-c1364799695] {
+  .curriculo-container{
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,33 +1,18 @@
-/* .container-lista {
-  max-width: 800px;
-  margin: 50px auto;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
-.container-lista h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-table {
+html {
+  margin: 0;
+  padding: 0;
+  height: 0%;
   width: 100%;
-  border-collapse: collapse;
+  background: #06050e;
 }
 
-thead {
-  background: #00d4ff;
-  color: #fff;
-}
-
-th, td {
-  padding: 10px;
-  border: 1px solid #ccc;
-  text-align: left;
-} */
 .container-lista {
   max-width: 900px;
   margin: 40px auto;
@@ -46,18 +31,34 @@ th, td {
   font-weight: bold;
 }
 
+/* .lista-contatos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+} */
 .lista-contatos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 20px;
+  border: 2px solid rgb(211, 16, 16);
+  border-radius: 43px;
+  padding: 30px;
 }
 
-.card-contato {
+/* .card-contato {
   background: #f9f9f9;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+} */
+.card-contato[_ngcontent-ng-c3851532165] {
+    background: #f9f9f9;
+    border-radius: 10px;
+    border: 2px solid #ff5722;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card-contato:hover {

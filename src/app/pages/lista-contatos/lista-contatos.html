@@ -21,3 +21,8 @@
   <!-- Caso não haja contatos -->
   <p *ngIf="contatos.length === 0">Nenhum contato cadastrado ainda.</p>
 </div>
+
+<!-- app.component.html -->
+<div [ngStyle]="{'background-color': corFundo}">
+  <router-outlet></router-outlet>
+</div>
