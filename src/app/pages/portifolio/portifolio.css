@@ -1,9 +1,10 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
-  }
+}
+
 .conteiner {
   width: 100%;
   max-width: 940px;
@@ -24,32 +25,45 @@ body {
   z-index: -1;
 
 }
+
 body {
   margin: 0;
   padding: 0;
   height: 100vh;
   width: 100vw;
-  background-size: cover;   /* cobre toda a tela */
-  background-position: center; /* centraliza */
-  background-repeat: no-repeat; /* não repete */
+  background-size: cover;
+  /* cobre toda a tela */
+  background-position: center;
+  /* centraliza */
+  background-repeat: no-repeat;
+  /* não repete */
 }
-.background-image{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* height: 100vh; */
-    /* width: 100%; */
+
+.background-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* height: 100vh; */
+  /* width: 100%; */
 }
 
 h1 {
   text-align: center;
 }
 
-.section {
+/* .section {
   margin-bottom: 51px;
   min-width: 100%;
   text-align: center;
   font-family: initial;
+} */
+.section {
+  margin-bottom: 48px;
+  min-width: 100%;
+  text-align: center;
+  font-family: initial;
+  margin: 15px;
+  padding: 20px 30px;
 }
 
 
@@ -84,8 +98,10 @@ p.section-title {
 
 
 .objetivo-junior {
-  white-space: normal;   /* controla quebra de linha */
-  word-break: break-word; /* quebra palavras longas */
+  white-space: normal;
+  /* controla quebra de linha */
+  word-break: break-word;
+  /* quebra palavras longas */
 }
 
 .obejtivo-junior>p {
@@ -357,12 +373,13 @@ strong {
   font-size: 1rem;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 0%;
-    width: 100%;
-    background: #06050e;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 0%;
+  width: 100%;
+  background: #06050e;
 }
 
 .main-body {

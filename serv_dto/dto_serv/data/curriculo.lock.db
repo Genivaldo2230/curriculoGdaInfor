@@ -1,0 +1,6 @@
+#FileLock
+#Wed Feb 11 23:06:43 BRT 2026
+hostName=GDAINFOR-DEV
+id=19c4f99c2060b62e19d8ebb673a72e3307792f943ba
+method=file
+server=192.168.1.101\:51445
