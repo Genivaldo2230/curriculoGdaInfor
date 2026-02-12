@@ -115,28 +115,19 @@ body {
   }
 
   /* 3. O Card do Currículo (O ponto principal) */
-  .curriculo-card,
-  .curriculo-card {
-    width: 95%;
-    /* Quase toda a largura da tela */
-    max-width: 100%;
-    height: auto;
-    /* Deixa a altura se ajustar ao texto */
-    max-height: none;
-    /* Remove qualquer trava de altura anterior */
-    margin: 20px auto;
-    /* Centraliza e dá espaço no topo/base */
-    padding: 20px;
-    /* Espaço interno para o texto não encostar na borda */
-    border-radius: 20px;
-    /* Cantos um pouco menos arredondados fica melhor no mobile */
-    background-color: rgb(255 255 255 / 32%);
-    /* Aumentei um pouco a opacidade para ler melhor */
-
-    /* Ajuste de Texto interno */
-    overflow-y: visible;
-    box-sizing: border-box;
-  }
+  .curriculo-card[_ngcontent-ng-c1364799695], .curriculo-card[_ngcontent-ng-c1364799695] {
+        width: 95%;
+        max-width: 100%;
+        height: auto;
+        max-height: none;
+        margin: 20px auto;
+        padding: 20px 30px;
+        border-radius: 20px;
+        background-color: rgb(255 255 255 / 32%);
+        overflow-y: visible;
+        box-sizing: border-box;
+        margin-top: 25em;
+    }
 
   .overlay {
     background-color: rgba(0, 0, 0, 0.4);
