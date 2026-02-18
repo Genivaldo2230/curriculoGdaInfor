@@ -47,7 +47,8 @@ O sistema permite o registro de contatos (nome, e-mail e mensagem), que são per
     ## mvn spring-boot:run
 
 
-    O que acontece nos bastidores?
+    # O que acontece nos bastidores?
+   	
     Quando você executa esse comando, o Maven realiza um ciclo de vida simplificado:
     
     Compila as classes do seu projeto.
@@ -56,8 +57,9 @@ O sistema permite o registro de contatos (nome, e-mail e mensagem), que são per
     
     Sobe um servidor embutido (geralmente o Tomcat) na porta padrão 8080.
 
-    ## Dicas úteis para o dia a dia
+    # Dicas úteis para o dia a dia
     Limpando o cache: Se o código não estiver atualizando como deveria, tente limpar os builds antigos antes de rodar:
+   	
     mvn clean spring-boot:run
     
     Porta ocupada: Se receber um erro de "Port 8080 already in use", você pode mudar a porta no arquivo src/main/resources/application.properties adicionando:
@@ -69,7 +71,7 @@ O sistema permite o registro de contatos (nome, e-mail e mensagem), que são per
     
     No Linux/Mac: ./mvnw spring-boot:run		
 
-7. 	Acessar a aplicação
+8. 	Acessar a aplicação
 • 	Front-End: 
 • 	Back-End API: 
 • 	H2 Console: 
@@ -83,21 +85,30 @@ O sistema permite o registro de contatos (nome, e-mail e mensagem), que são per
     Projeto desenvolvido por Genivaldo Anjos como parte de estudos e prática em Angular e Spring Boot.
 
 #   Foi criado um Script com nome de ( START.SH )
-  Ele serve pra da inicio ao sistema conjuto back-end eo Front-End assim poupando serviço de inicialização pra melhora a manutenção do codigo  se deve inicia no terminal o comando 
+  Ele serve pra da inicio ao sistema conjuto back-end eo Front-End 
+  Assim poupando serviço de inicialização pra melhora a manutenção do codigo  se deve inicia no terminal o comando
+  No seu caso, o arquivo start.sh é criado apenas como um "texto". O sistema bloqueia a execução por segurança.
+  O comando mágico
+  Bash
+  chmod +x start.sh
+  chmod: Chama a ferramenta de permissões.
 
- ./start.sh
+  +x: Adiciona permissão de Execução (x de execute).
+  
+  start.sh: O alvo da ação.
+  
+  # chmod +x start.sh
+  
+  # Por que fazer isso?
+  Sem o +x, o Linux/Mac entende o script como um documento comum. 
+  Com ele, o sistema entende que o arquivo é um programa que pode rodar processos (como o seu Back e Front).
+  
+  Já tentou rodar o ./start.sh e deu "Permission denied"? Se sim, esse comando resolve na hora.
 
-O erro comum: "Permission Denied"
-Se ao digitar o comando o terminal retornar que você não tem permissão, é porque o arquivo ainda não foi marcado como executável. Resolva com:
 
-com esse comando de propriedade da pasta se tornando o adminstrador
-
-# chmod +x start.sh
-
-
-O que um bom start.sh Full Stack deve conter
-Para que ele realmente "poupe serviço", o ideal é que ele gerencie os dois processos. Um exemplo de estrutura eficiente para o seu caso (Angular + Spring Boot) seria:
-Linha de comando da criação do Script automatizando inicialização do codigo BACK-END e FRONT-END codigo abaixo eo SCRIPT
+  O que um bom start.sh Full Stack deve conter
+  Para que ele realmente "poupe serviço", o ideal é que ele gerencie os dois processos. Um exemplo de estrutura eficiente para o seu caso (Angular + Spring Boot) seria:
+  Linha de comando da criação do Script automatizando inicialização do codigo BACK-END e FRONT-END codigo abaixo eo SCRIPT
 
 #=========================================================================================================================================================#
 Bash
