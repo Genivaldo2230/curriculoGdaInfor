@@ -22,6 +22,7 @@ O sistema permite o registro de contatos (nome, e-mail e mensagem), que são per
 • 	Java JDK 17+
 • 	Maven.
 ▶️ Passos para rodar o projeto
+
 1. 	Clonar o repositório
 
 2. 	Instalar dependências do Front-End
@@ -79,18 +80,19 @@ O sistema permite o registro de contatos (nome, e-mail e mensagem), que são per
 • 	Deploy em ambiente de nuvem (AWS/Azure/Heroku)
 
 👨‍💻 Autor
-Projeto desenvolvido por Genivaldo Anjos como parte de estudos e prática em Angular e Spring Boot.
+    Projeto desenvolvido por Genivaldo Anjos como parte de estudos e prática em Angular e Spring Boot.
 
-# Foi criado um Script com nome de ( START.SH )  Ele serve pra da inicio ao sistema conjuto back-end eo Front-End assim poupando serviço de inicialização pra melhora a manutenção do codigo  se deve inicia no terminal o comando 
+#   Foi criado um Script com nome de ( START.SH )
+  Ele serve pra da inicio ao sistema conjuto back-end eo Front-End assim poupando serviço de inicialização pra melhora a manutenção do codigo  se deve inicia no terminal o comando 
 
-## ./start.sh
+ ./start.sh
 
 O erro comum: "Permission Denied"
 Se ao digitar o comando o terminal retornar que você não tem permissão, é porque o arquivo ainda não foi marcado como executável. Resolva com:
 
 com esse comando de propriedade da pasta se tornando o adminstrador
 
-    ## chmod +x start.sh
+# chmod +x start.sh
 
 
 O que um bom start.sh Full Stack deve conter
