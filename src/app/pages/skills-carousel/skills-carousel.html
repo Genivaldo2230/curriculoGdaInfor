@@ -1,0 +1,20 @@
+<div class="carousel-container">
+  <button class="nav-btn" (click)="prevSkill()"> < </button>
+
+  <div class="carousel">
+    <div *ngFor="let skill of skills; let i = index"
+         class="card"
+         [class.visible]="i === currentIndex"
+         (click)="selectSkill(i)">
+
+      <img [src]="skill.icon" class="icon" [alt]="skill.icon">
+
+      <div class="overlay">
+        <h3>{{ skill.title }}</h3>
+        <p>{{ skill.description }}</p>
+      </div>
+    </div>
+  </div>
+
+  <button class="nav-btn" (click)="nextSkill()"> > </button>
+</div>

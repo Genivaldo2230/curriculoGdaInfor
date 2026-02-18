@@ -1,0 +1,359 @@
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+  .card {
+    width: 90px;
+    height: 90px;
+  }
+
+  .app-skills-carousel {
+    height: 155vh;
+  }
+
+  .icon {
+    width: 88%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .carousel-container {
+    position: relative;
+    display: flex;    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-content: center;
+    flex-direction: row;
+    align-items: stretch;
+    height: 125vh;
+    width: 100vw;
+    background: #cac0c063;
+  }
+
+  .nav-btn {
+    font-size: 17px;
+    padding: 17px 15px;
+    background: #2f5dd791;
+    border-radius: 97%;
+    width: 38%;
+    /* height: 38%; */
+    padding: 12px;
+    border: 1px solid white;
+  }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+  .card {
+    width: 90px;
+    height: 90px;
+  }
+
+  .app-skills-carousel {
+    height: 155vh;
+  }
+
+  .icon {
+    width: 88%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .carousel-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-content: center;
+    flex-direction: row;
+    align-items: stretch;
+    height: 125vh;
+    width: 100vw;
+    background: #00000063;
+  }
+
+  .nav-btn {
+    font-size: 17px;
+    padding: 17px 15px;
+    background: #000f23;
+    border-radius: 97%;
+    width: 26%;
+    height: 13%;
+    padding: 11px;
+    border: 1px solid white;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-content: center;
+  flex-direction: row;
+  align-items: stretch;
+  height: 63vh;
+  width: 66vw;
+  background: #00000063;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  position: relative;
+  min-width: 200px;
+  max-width: 250px;
+  height: 200px;
+  margin: 0 10px;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  transform: scale(0.8);
+}
+.card.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.icon {
+  width: 62%;
+  height: 103%;
+  object-fit: contain;
+  border-radius: 100%;
+}
+
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.4s ease;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+}
+.card.active .overlay {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.nav-btn {
+  background: #333;
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav-btn:hover {
+  background: #555;
+}
+
+/* .carousel {
+    flex-direction: column;
+    align-items: center;
+  } */
+.carousel {
+  flex-direction: column;
+  max-height: 100%;
+}
+
+.card {
+  width: 90%;
+  max-width: 300px;
+  height: 180px;
+  margin: 10px 0;
+}
+
+.nav-btn {
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+.nav-btn {
+  font-size: 20px;
+  padding: 17px 15px;
+  margin-top: 13rem;
+  background: #00000017;
+}
+
+/* .nav-btn {
+  font-size: 20px;
+  padding: 17px 15px;
+  /* margin-top: 43rem;
+  background: #2f5dd791;
+} */
+
+.nav-btn {
+  font-size: 20px;
+  padding: 17px 15px;
+  background: #2f5dd791;
+  border-radius: 97%;
+  width: 19%;
+  height: 38%;
+  padding: 30px;
+  border: 1px solid white;
+}
+/* 1. ESTILO BASE (Mobile-First: Serve para 480px e abaixo) */
+.card {
+  width: 90px;
+  height: 90px;
+}
+
+.app-skills-carousel {
+  height: 155vh;
+}
+
+.icon {
+  width: 88%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  height: 125vh;
+  width: 100vw;
+  /* Variável com fallback para a cor do 480px */
+  background: var(--carousel-bg, #00000063);
+}
+
+.nav-btn {
+  font-size: 17px;
+  border-radius: 97%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Valores base do 480px */
+  background: var(--btn-bg, #000f23);
+  width: var(--btn-width, 26%);
+  height: var(--btn-height, 13%);
+  padding: var(--btn-padding, 11px);
+}
+
+/* 2. ADAPTAÇÃO PARA TELAS MÉDIAS (Tablets / 768px) */
+/* Aqui você só escreve o que REALMENTE muda */
+@media (min-width: 481px) and (max-width: 768px) {
+  :host {
+    --carousel-bg: #cac0c063;
+    --btn-bg: #2f5dd791;
+    --btn-width: 38%;
+    --btn-height: auto; /* Se quiser resetar o height fixo */
+    --btn-padding: 12px;
+  }
+}
+
+:host {
+  --c-bg: #00000099;
+  --primary-blue: #2f5dd7;
+}
+
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background: var(--c-bg);
+}
+
+/* O CARD QUE SALTA */
+.card {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: none; /* Esconde todos */
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* APENAS O CARD ATIVO APARECE E PULA */
+.card.visible {
+  display: flex;
+  animation: jumpFade 3s infinite ease-in-out;
+}
+
+/* KEYFRAMES: Pula, brilha e apaga */
+@keyframes jumpFade {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translateY(0);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1.1) translateY(-20px); /* Pulo */
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8); /* Apagando para o próximo */
+  }
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 15px var(--primary-blue));
+}
+
+/* OVERLAY: Aparece quando clicado (Skill Ativa) */
+.card.active .overlay {
+  display: flex;
+  opacity: 1;
+  z-index: 20;
+}

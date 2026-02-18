@@ -1,30 +1,25 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
-// Se você tiver outros componentes no Homer, importe-os:
-// import { Footer } from '../footer/footer';
+import { Component, AfterViewInit, ElementRef, Renderer2, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import { SkillsCarouselComponent } from '../skills-carousel/skills-carousel';
 
 @Component({
   selector: 'app-homer',
-  standalone: true,
-  imports: [CommonModule], // só o que realmente usa
   templateUrl: './homer.html',
-  styleUrls: ['./homer.css']
+  styleUrls: ['./homer.css'],
+  imports: [SkillsCarouselComponent]
 })
-export class HomerComponent {
-ngOnInit() {
-  const video = document.getElementById('backgroundVideo') as HTMLVideoElement;
-  if (window.innerWidth < 768) {
-    video.style.objectFit = 'contain';
-  } else {
-    video.style.objectFit = 'cover';
+export class HomerComponent implements AfterViewInit {
+
+  constructor(
+    private el: ElementRef,
+    private renderer: Renderer2,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {}
+
+  ngAfterViewInit() {
+    // Só roda no navegador, nunca no SSR
+    if (isPlatformBrowser(this.platformId)) {
+      this.renderer.addClass(this.el.nativeElement, 'ativo');
+    }
   }
-}
-
-  // // Se for vídeo
-  //  videoUrl: string = 'assets/videos/fundo.mp4';
-
-  //  // Se for imagem
-  // imgUrl: string = '../../../assets/images/wallpp-portifolio.jpg';
-
 }

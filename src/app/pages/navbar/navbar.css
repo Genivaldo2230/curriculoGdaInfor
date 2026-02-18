@@ -31,4 +31,13 @@
 
 .navbar a:hover {
   text-decoration: underline;
+  color: rgb(207, 210, 30);
+  font-weight: 800;
+  animation: pulse 0.6s ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
 }
