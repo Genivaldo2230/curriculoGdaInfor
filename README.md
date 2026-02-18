@@ -20,15 +20,55 @@ O sistema permite o registro de contatos (nome, e-mail e mensagem), que são per
 🔧 Pré-requisitos
 • 	Node.js e Angular CLI instalados
 • 	Java JDK 17+
-• 	Maven ou Gradle
+• 	Maven.
 ▶️ Passos para rodar o projeto
 1. 	Clonar o repositório
 
 2. 	Instalar dependências do Front-End
 
-3. 	Rodar o Back-End
+2-1. Instalar uma dependência de produçãoUse este comando para bibliotecas que seu aplicativo precisa para rodar (ex: Bootstrap, Lodash, RxJS).
 
-4. 	Acessar a aplicação
+2-3. 	## npm install <nome-do-pacote>
+
+3.   Instalar uma dependência de desenvolvimento (DevDependency) Use para ferramentas que só servem para o momento de codificação ou build (ex: Linters, tipos do TypeScript, ferramentas de teste).
+
+3-1.  ## npm install <nome-do-pacote> --save-dev
+
+3-2. Se você acabou de baixar um projeto do GitHub e ele não tem a pasta node_modules, basta rodar apenas npm install na raiz do projeto para restaurar tudo.
+
+3-3   ## npm install
+
+   	
+5. 	Rodar o Back-End
+
+6. 	Inciando o Back-End  executar o comando no terminal na pasta raiz do seu projeto Java (onde está o arquivo pom.xml) e digite:
+
+    ## mvn spring-boot:run
+
+
+    O que acontece nos bastidores?
+    Quando você executa esse comando, o Maven realiza um ciclo de vida simplificado:
+    
+    Compila as classes do seu projeto.
+    
+    Copia os recursos (como arquivos .properties ou .yml).
+    
+    Sobe um servidor embutido (geralmente o Tomcat) na porta padrão 8080.
+
+    ## Dicas úteis para o dia a dia
+    Limpando o cache: Se o código não estiver atualizando como deveria, tente limpar os builds antigos antes de rodar:
+    mvn clean spring-boot:run
+    
+    Porta ocupada: Se receber um erro de "Port 8080 already in use", você pode mudar a porta no arquivo src/main/resources/application.properties adicionando:
+    server.port=8081
+    
+    Sem o Maven instalado globalmente: Se você estiver usando o "Maven Wrapper" (comum em projetos gerados pelo Spring Initializr), use:
+    
+    No Windows: .\mvnw spring-boot:run
+    
+    No Linux/Mac: ./mvnw spring-boot:run		
+
+7. 	Acessar a aplicação
 • 	Front-End: 
 • 	Back-End API: 
 • 	H2 Console: 
@@ -39,11 +79,53 @@ O sistema permite o registro de contatos (nome, e-mail e mensagem), que são per
 • 	Deploy em ambiente de nuvem (AWS/Azure/Heroku)
 
 👨‍💻 Autor
-Projeto desenvolvido por Genivaldo como parte de estudos e prática em Angular e Spring Boot.
+Projeto desenvolvido por Genivaldo Anjos como parte de estudos e prática em Angular e Spring Boot.
 
-# Foi criado um Script com nome de START.SH serve pra da inicio ao sistema conjuto back-end eo Front-End assim poupando serviço de inicialização pra melhora a manutenção do codigo  se deve inicia no terminal o comando 
+# Foi criado um Script com nome de ( START.SH )  Ele serve pra da inicio ao sistema conjuto back-end eo Front-End assim poupando serviço de inicialização pra melhora a manutenção do codigo  se deve inicia no terminal o comando 
 
 ## ./start.sh
+
+O erro comum: "Permission Denied"
+Se ao digitar o comando o terminal retornar que você não tem permissão, é porque o arquivo ainda não foi marcado como executável. Resolva com:
+
+com esse comando de propriedade da pasta se tornando o adminstrador
+
+    ## chmod +x start.sh
+
+
+O que um bom start.sh Full Stack deve conter
+Para que ele realmente "poupe serviço", o ideal é que ele gerencie os dois processos. Um exemplo de estrutura eficiente para o seu caso (Angular + Spring Boot) seria:
+Linha de comando da criação do Script automatizando inicialização do codigo BACK-END e FRONT-END codigo abaixo eo SCRIPT
+
+#=========================================================================================================================================================#
+Bash
+#!/bin/bash
+
+# Iniciando o Back-end em segundo plano
+echo "Iniciando Spring Boot..."
+cd ./backend
+mvn spring-boot:run & 
+
+# Guardar o ID do processo do back-end para fechar depois, se necessário
+BACK_PID=$!
+
+# Iniciando o Front-end
+echo "Iniciando Angular..."
+cd ../frontend
+ng serve
+
+#=========================================================================================================================================================#
+Por que isso ajuda na manutenção?
+
+Padronização: Garante que todos os desenvolvedores do time usem as mesmas flags (ex: perfis de banco de dados específicos).
+
+Agilidade: Você não esquece de subir uma parte do sistema e fica tentando debugar um erro de conexão que, na verdade, é só o servidor desligado.
+
+Logs centralizados: Você consegue ver o fluxo de dados saindo do Angular e chegando no Spring no mesmo console.
+
+Gerenciamento de Processos : Se você notar que, após fechar o terminal, o Spring Boot continua rodando e travando a porta 8080, você pode adicionar um comando de ( trap ) no seu script para que, ao dar Ctrl+C, ele derrube tanto o Front quanto o Back simultaneamente.
+
+O seu script já está configurado para rodar os dois ao mesmo tempo ou ele trava na inicialização do primeiro?
 
 # CurriculoGdaInfor
 
