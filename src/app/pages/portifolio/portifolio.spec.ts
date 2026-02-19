@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { PortifolioComponent } from './portifolio';
+import { provideZonelessChangeDetection } from '@angular/core'; // 👈 Importe essencial
 
 describe('PortifolioComponent', () => {
   let component: PortifolioComponent;
@@ -8,7 +8,10 @@ describe('PortifolioComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PortifolioComponent]
+      imports: [PortifolioComponent],
+      providers: [
+        provideZonelessChangeDetection() // 👈 Resolvendo o erro de Zone.js
+      ]
     })
     .compileComponents();
 

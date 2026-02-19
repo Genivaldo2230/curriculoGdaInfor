@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { Header } from './header';
+import { provideZonelessChangeDetection } from '@angular/core'; // 👈 Importe necessário
 
 describe('Header', () => {
   let component: Header;
@@ -8,7 +8,10 @@ describe('Header', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Header]
+      imports: [Header],
+      providers: [
+        provideZonelessChangeDetection() // 👈 Resolve o erro NG0908
+      ]
     })
     .compileComponents();
 

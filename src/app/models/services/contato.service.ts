@@ -14,9 +14,9 @@ export interface Contato {
 })
 export class ContatoService {
   // Verifique se a porta é a 8080 do seu Spring Boot
-  // private apiUrl = 'http://localhost:8080/api/contatos';
+  private apiUrl = 'http://localhost:8080/api/contatos';
   // Substitua o localhost por 127.0.0.1
-  private apiUrl = 'http://127.0.0.1:8080/api/contatos';
+  // private apiUrl = 'http://127.0.0.1:8080/api/contatos';
 
   constructor(private http: HttpClient) { }
 

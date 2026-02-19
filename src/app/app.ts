@@ -10,7 +10,7 @@ import { SkillsCarouselComponent } from './pages/skills-carousel/skills-carousel
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, Footer, Header, NavbarComponent, SkillsCarouselComponent],
+  imports: [CommonModule, RouterOutlet, Footer, Header, NavbarComponent, ],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })

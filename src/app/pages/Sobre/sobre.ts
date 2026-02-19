@@ -9,7 +9,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   styleUrls: ['./sobre.css'],   // ✅ correto
   standalone: true,
 })
-export class sobre {
+export class SobreComponent {
   imagemUrl = '/assets/images/fundo.jpg';
 
 }

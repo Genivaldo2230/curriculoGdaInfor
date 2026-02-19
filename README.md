@@ -70,6 +70,13 @@ Métodos liberados: GET, POST, PUT, DELETE, OPTIONS.
 ````
 🚀 Inicialização Automatizada (start.sh)
 ```text
+## 🚀 Inicialização Local
+O arquivo `start.sh` está configurado com caminhos absolutos. Para rodar em sua máquina:
+1. Abra o `start.sh`.
+2. Altere `BACKEND_PATH` e `FRONTEND_PATH` para os diretórios onde o projeto foi clonado.
+3. Execute `./start.sh` no terminal Git Bash.
+````
+```text
 Para facilitar a inicialização e evitar processos travados na memória, utilize o script de automação com comando trap:
 
 Dar permissão: chmod +x start.sh

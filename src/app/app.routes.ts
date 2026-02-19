@@ -6,12 +6,12 @@ import { Header } from './pages/header/header';
 import { HomerComponent as Homer} from './pages/homer/homer';
 import { ListaContatosComponent } from './pages/lista-contatos/lista-contatos';
 import { PortifolioComponent } from './pages/portifolio/portifolio';
-import { sobre } from './pages/Sobre/sobre';
+import { SobreComponent } from './pages/sobre/sobre';
 import { SkillsCarouselComponent } from './pages/skills-carousel/skills-carousel';
 
 export const routes: Routes = [
   // { path: 'contato', component: ContatoComponent },
-  { path: 'sobre', component: sobre },
+  { path: 'sobre', component: SobreComponent },
   { path: 'fale-comigo', component: FaleComigoComponent },
   { path: 'footer', component: Footer },
   { path: 'header', component: Header },

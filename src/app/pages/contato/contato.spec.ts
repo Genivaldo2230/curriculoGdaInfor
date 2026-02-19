@@ -1,6 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ContatoComponent } from './contato';
+import { provideZonelessChangeDetection } from '@angular/core';
+import { provideHttpClient } from '@angular/common/http';
+import { provideHttpClientTesting } from '@angular/common/http/testing';
 
 describe('Contato', () => {
   let component: ContatoComponent;
@@ -8,7 +11,12 @@ describe('Contato', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ContatoComponent]
+      imports: [ContatoComponent],
+      providers: [
+        provideZonelessChangeDetection(),
+        provideHttpClient(),
+        provideHttpClientTesting()
+      ]
     })
     .compileComponents();
 

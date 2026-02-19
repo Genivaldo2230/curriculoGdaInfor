@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { NavbarComponent } from './navbar';
+import { provideZonelessChangeDetection } from '@angular/core'; // 👈 Importe aqui
+import { provideRouter } from '@angular/router'; // 👈 Importe aqui
 
 describe('NavbarComponent', () => {
   let component: NavbarComponent;
@@ -8,7 +9,11 @@ describe('NavbarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NavbarComponent]
+      imports: [NavbarComponent],
+      providers: [
+        provideZonelessChangeDetection(), // 👈 Resolvendo o erro NG0908
+        provideRouter([]) // 👈 Evita erro se houver [routerLink] no HTML
+      ]
     })
     .compileComponents();
 
