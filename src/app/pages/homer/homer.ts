@@ -1,12 +1,12 @@
 import { Component, AfterViewInit, ElementRef, Renderer2, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { SkillsCarouselComponent } from '../skills-carousel/skills-carousel';
+
 
 @Component({
   selector: 'app-homer',
   templateUrl: './homer.html',
   styleUrls: ['./homer.css'],
-  imports: [SkillsCarouselComponent]
+
 })
 export class HomerComponent implements AfterViewInit {
 

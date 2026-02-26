@@ -20,11 +20,16 @@ body {
   height: 132%;
 }
 
-.overlay {
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white;
-  text-align: center;
-  /* margin: -1vh; */
+.overlay
+ {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-self: center;
+    align-content: center;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
 }
 
 /* homer.css */
@@ -44,7 +49,7 @@ body {
   background-color: rgb(255 255 255 / 59%);
   margin-top: -6px;
   max-width: 800px;
-  max-height: 461px;
+  /* max-height: 461px; */
   padding: 10px;
   border-radius: 27px;
   border: 2px solid #ffff;

@@ -7,7 +7,7 @@ import { HomerComponent as Homer} from './pages/homer/homer';
 import { ListaContatosComponent } from './pages/lista-contatos/lista-contatos';
 import { PortifolioComponent } from './pages/portifolio/portifolio';
 import { SobreComponent } from './pages/sobre/sobre';
-import { SkillsCarouselComponent } from './pages/skills-carousel/skills-carousel';
+
 
 export const routes: Routes = [
   // { path: 'contato', component: ContatoComponent },
@@ -16,8 +16,8 @@ export const routes: Routes = [
   { path: 'footer', component: Footer },
   { path: 'header', component: Header },
   { path: 'home', component: Homer },
-  { path: 'skills', component: SkillsCarouselComponent },
   { path: 'lista-contatos', component: ListaContatosComponent },
   { path: 'portifolio', component: PortifolioComponent },
+  { path: 'contato', component: ContatoComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];

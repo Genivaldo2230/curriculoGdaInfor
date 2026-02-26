@@ -12,7 +12,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
   selector: 'app-portifolio',
   standalone: true,
   // 2. Adicione o RouterLink se for usá-lo no HTML futuramente
-  imports: [CommonModule, FontAwesomeModule],
+  imports: [CommonModule,FontAwesomeModule],
   templateUrl: './portifolio.html',
   styleUrls: ['./portifolio.css']
 })

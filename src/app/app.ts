@@ -5,7 +5,7 @@ import { TestService } from './models/services/test/test';
 import { Footer } from "./pages/footer/footer";
 import { Header } from './pages/header/header';
 import { NavbarComponent } from './pages/navbar/navbar';
-import { SkillsCarouselComponent } from './pages/skills-carousel/skills-carousel';
+
 
 @Component({
   selector: 'app-root',
