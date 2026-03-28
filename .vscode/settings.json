@@ -1,0 +1,15 @@
+// {
+//     "java.compile.nullAnalysis.mode": "automatic",
+//     "java.configuration.updateBuildConfiguration": "interactive",
+//     "java.maven.downloadSources": true,
+//     "java.import.maven.enabled": true
+// }
+{
+    "java.compile.nullAnalysis.mode": "disabled",
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.maven.downloadSources": true,
+    "java.import.maven.enabled": true,
+    "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+    "java.format.settings.profile": "GoogleStyle",
+    "editor.formatOnSave": true
+}
