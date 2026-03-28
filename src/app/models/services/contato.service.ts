@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import {Injectable} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
 
 export interface Contato {
   id?: number;
@@ -18,7 +18,8 @@ export class ContatoService {
   // Substitua o localhost por 127.0.0.1
   // private apiUrl = 'http://127.0.0.1:8080/api/contatos';
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+  }
 
   // Usado pela tela 'lista-contatos'
   listarContatos(): Observable<Contato[]> {

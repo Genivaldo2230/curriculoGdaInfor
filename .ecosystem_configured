@@ -1,0 +1,7 @@
+# Configuração gerada automaticamente
+# Data: dom 22 mar 2026 17:38:08 -03
+# Sistema: Linux
+OS=Linux
+STRUCTURE_TYPE=legacy
+BACKEND_PATH=/home/gdaserv/Documentos/WorkSpaceFrom/curriculoGdaInfor/serv_dto/dto_serv
+FRONTEND_PATH=/home/gdaserv/Documentos/WorkSpaceFrom/curriculoGdaInfor
