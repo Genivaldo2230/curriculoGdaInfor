@@ -1,0 +1,454 @@
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Unexpected closing tag "body". It may happen when the tag has already been closed by another tag. For more info see https://www.w3.org/TR/html5/syntax.html#closing-elements-that-have-implied-end-tags[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:69:0:
+[37m      69 │ [32m</body>[37m
+         ╵ [32m~~~~~~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:7:15:
+[37m      7 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Unexpected closing tag "video". It may happen when the tag has already been closed by another tag. For more info see https://www.w3.org/TR/html5/syntax.html#closing-elements-that-have-implied-end-tags[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:6:4:
+[37m      6 │     [32m</video>[37m
+        ╵     [32m~~~~~~~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:7:15:
+[37m      7 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mExpected identifier but found "/"[0m [1m[35m[plugin angular-compiler][0m [css-syntax-error]
+
+    src/app/pages/homer/homer.css:147:2:
+[37m      147 │   [32m/[37m
+          ╵   [32m^[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mExpected identifier but found "255"[0m [1m[35m[plugin angular-compiler][0m [css-syntax-error]
+
+    src/app/pages/homer/homer.css:148:17:
+[37m      148 │   color: #ede3e3;[32m255[37m, 255);
+          ╵                  [32m~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mExpected identifier but found "#222222ab"[0m [1m[35m[plugin angular-compiler][0m [css-syntax-error]
+
+    src/app/pages/homer/homer.css:227:2:
+[37m      227 │   [32m#222222ab[37m
+          ╵   [32m~~~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Opening tag "ar" not terminated.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:80:4:
+[37m      80 │     [32m<ar[37m" class="card-action">VER PORTFÓLIO →</a>
+         ╵     [32m~~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:7:15:
+[37m      7 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Unexpected closing tag "a". It may happen when the tag has already been closed by another tag. For more info see https://www.w3.org/TR/html5/syntax.html#closing-elements-that-have-implied-end-tags[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:80:44:
+[37m      80 │     <ar" class="card-action">VER PORTFÓLIO [32m→<[37m/a>
+         ╵                                            [32m~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:7:15:
+[37m      7 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Opening tag "a" not terminated.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:80:4:
+[37m      80 │     [32m<a r[37m" class="card-action">VER PORTFÓLIO →</a>
+         ╵     [32m~~~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:7:15:
+[37m      7 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Unexpected closing tag "a". It may happen when the tag has already been closed by another tag. For more info see https://www.w3.org/TR/html5/syntax.html#closing-elements-that-have-implied-end-tags[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:80:45:
+[37m      80 │     <a r" class="card-action">VER PORTFÓLIO [32m→<[37m/a>
+         ╵                                             [32m~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:7:15:
+[37m      7 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Opening tag "a" not terminated.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:80:4:
+[37m      80 │     [32m<a ro[37m" class="card-action">VER PORTFÓLIO →</a>
+         ╵     [32m~~~~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:7:15:
+[37m      7 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Unexpected closing tag "a". It may happen when the tag has already been closed by another tag. For more info see https://www.w3.org/TR/html5/syntax.html#closing-elements-that-have-implied-end-tags[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:80:46:
+[37m      80 │     <a ro" class="card-action">VER PORTFÓLIO [32m→<[37m/a>
+         ╵                                              [32m~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:7:15:
+[37m      7 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: All imports are unused[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.ts:10:2:
+[37m      10 │   [32mimports[37m: [RouterLink],
+         ╵   [32m~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Opening tag "a" not terminated.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:80:4:
+[37m      80 │     [32m<a routerLink=""[37m" class="card-action">VER PORTFÓLIO →</a>
+         ╵     [32m~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:8:15:
+[37m      8 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Unexpected closing tag "a". It may happen when the tag has already been closed by another tag. For more info see https://www.w3.org/TR/html5/syntax.html#closing-elements-that-have-implied-end-tags[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:80:57:
+[37m      80 │     <a routerLink=""" class="card-action">VER PORTFÓLIO [32m→<[37m/a>
+         ╵                                                         [32m~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:8:15:
+[37m      8 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: All imports are unused[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.ts:10:2:
+[37m      10 │   [32mimports[37m: [RouterLink],
+         ╵   [32m~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Opening tag "a" not terminated.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:80:4:
+[37m      80 │     [32m<a routerLink="/"[37m" class="card-action">VER PORTFÓLIO →</a>
+         ╵     [32m~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:8:15:
+[37m      8 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Unexpected closing tag "a". It may happen when the tag has already been closed by another tag. For more info see https://www.w3.org/TR/html5/syntax.html#closing-elements-that-have-implied-end-tags[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:80:58:
+[37m      80 │     <a routerLink="/"" class="card-action">VER PORTFÓLIO [32m→<[37m/a>
+         ╵                                                          [32m~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:8:15:
+[37m      8 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: All imports are unused[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.ts:10:2:
+[37m      10 │   [32mimports[37m: [RouterLink],
+         ╵   [32m~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Opening tag "a" not terminated.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:80:4:
+[37m      80 │     [32m<a routerLink="/src"[37m" class="card-action">VER PORTFÓLIO →</a>
+         ╵     [32m~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:8:15:
+[37m      8 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Unexpected closing tag "a". It may happen when the tag has already been closed by another tag. For more info see https://www.w3.org/TR/html5/syntax.html#closing-elements-that-have-implied-end-tags[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:80:61:
+[37m      80 │     <a routerLink="/src"" class="card-action">VER PORTFÓLIO [32m→<[37m/a>
+         ╵                                                             [32m~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:8:15:
+[37m      8 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: All imports are unused[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.ts:10:2:
+[37m      10 │   [32mimports[37m: [RouterLink],
+         ╵   [32m~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Opening tag "a" not terminated.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:80:4:
+[37m      80 │     [32m<a routerLink="/src/"[37m" class="card-action">VER PORTFÓLIO →</a>
+         ╵     [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:8:15:
+[37m      8 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Unexpected closing tag "a". It may happen when the tag has already been closed by another tag. For more info see https://www.w3.org/TR/html5/syntax.html#closing-elements-that-have-implied-end-tags[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:80:62:
+[37m      80 │     <a routerLink="/src/"" class="card-action">VER PORTFÓLIO [32m→<[37m/a>
+         ╵                                                              [32m~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:8:15:
+[37m      8 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: All imports are unused[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.ts:10:2:
+[37m      10 │   [32mimports[37m: [RouterLink],
+         ╵   [32m~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Opening tag "a" not terminated.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:80:4:
+[37m      80 │     [32m<a routerLink="/src/app"[37m" class="card-action">VER PORTFÓLIO �...
+         ╵     [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:8:15:
+[37m      8 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Unexpected closing tag "a". It may happen when the tag has already been closed by another tag. For more info see https://www.w3.org/TR/html5/syntax.html#closing-elements-that-have-implied-end-tags[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:80:65:
+[37m      80 │ ... routerLink="/src/app"" class="card-action">VER PORTFÓLIO [32m→<[37m/a>
+         ╵                                                              [32m~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:8:15:
+[37m      8 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: All imports are unused[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.ts:10:2:
+[37m      10 │   [32mimports[37m: [RouterLink],
+         ╵   [32m~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Opening tag "a" not terminated.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:80:4:
+[37m      80 │     [32m<a routerLink="/src/app/"[37m" class="card-action">VER PORTFÓLIO ...
+         ╵     [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:8:15:
+[37m      8 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Unexpected closing tag "a". It may happen when the tag has already been closed by another tag. For more info see https://www.w3.org/TR/html5/syntax.html#closing-elements-that-have-implied-end-tags[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:80:66:
+[37m      80 │ ...routerLink="/src/app/"" class="card-action">VER PORTFÓLIO [32m→<[37m/a>
+         ╵                                                              [32m~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:8:15:
+[37m      8 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: All imports are unused[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.ts:10:2:
+[37m      10 │   [32mimports[37m: [RouterLink],
+         ╵   [32m~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Opening tag "a" not terminated.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:80:4:
+[37m      80 │     [32m<a routerLink="/src/app/pages"[37m" class="card-action">VER PORTF�...
+         ╵     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:8:15:
+[37m      8 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Unexpected closing tag "a". It may happen when the tag has already been closed by another tag. For more info see https://www.w3.org/TR/html5/syntax.html#closing-elements-that-have-implied-end-tags[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:80:71:
+[37m      80 │ ...rLink="/src/app/pages"" class="card-action">VER PORTFÓLIO [32m→<[37m/a>
+         ╵                                                              [32m~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:8:15:
+[37m      8 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: All imports are unused[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.ts:10:2:
+[37m      10 │   [32mimports[37m: [RouterLink],
+         ╵   [32m~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Opening tag "a" not terminated.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:80:4:
+[37m      80 │     [32m<a routerLink="/src/app/pages/"[37m" class="card-action">VER PORTF...
+         ╵     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:8:15:
+[37m      8 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Unexpected closing tag "a". It may happen when the tag has already been closed by another tag. For more info see https://www.w3.org/TR/html5/syntax.html#closing-elements-that-have-implied-end-tags[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:80:72:
+[37m      80 │ ...Link="/src/app/pages/"" class="card-action">VER PORTFÓLIO [32m→<[37m/a>
+         ╵                                                              [32m~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:8:15:
+[37m      8 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mNG8113: All imports are unused[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.ts:10:2:
+[37m      10 │   [32mimports[37m: [RouterLink],
+         ╵   [32m~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Opening tag "a" not terminated.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:80:4:
+[37m      80 │     [32m<a routerLink="/src/app/pages/portifolio"[37m" class="card-action"...
+         ╵     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:8:15:
+[37m      8 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Unexpected closing tag "a". It may happen when the tag has already been closed by another tag. For more info see https://www.w3.org/TR/html5/syntax.html#closing-elements-that-have-implied-end-tags[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/homer/homer.html:80:82:
+[37m      80 │ .../app/pages/portifolio"" class="card-action">VER PORTFÓLIO [32m→<[37m/a>
+         ╵                                                              [32m~~[0m
+
+  Error occurs in the template of component HomerComponent.
+
+    src/app/pages/homer/homer.ts:8:15:
+[37m      8 │   templateUrl: [32m'./homer.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mExpected ":"[0m [1m[35m[plugin angular-compiler][0m [css-syntax-error]
+
+    src/app/pages/homer/homer.css:2:13:
+[37m      2 │     max-width[32m[37m Allows authors to constrain content width to a certai...
+        │              [32m^[37m
+        ╵              [32m:[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mExpected ":"[0m [1m[35m[plugin angular-compiler][0m [css-syntax-error]
+
+    src/app/pages/homer/homer.css:2:13:
+[37m      2 │     max-width[32m[37m n content width to a certain range. Amplamente dispon...
+        │              [32m^[37m
+        ╵              [32m:[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mExpected ":"[0m [1m[35m[plugin angular-compiler][0m [css-syntax-error]
+
+    src/app/pages/homer/homer.css:2:13:
+[37m      2 │     max-width[32m[37m  content width to a certain range. Amplamente dispon�...
+        │              [32m^[37m
+        ╵              [32m:[0m
+
+[39m[22m
+[1m[33m[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mExpected ":"[0m [1m[35m[plugin angular-compiler][0m [css-syntax-error]
+
+    src/app/pages/homer/homer.css:2:13:
+[37m      2 │     max-width[32m[37m content width to a certain range. Amplamente disponí...
+        │              [32m^[37m
+        ╵              [32m:[0m
+
+[39m[22m

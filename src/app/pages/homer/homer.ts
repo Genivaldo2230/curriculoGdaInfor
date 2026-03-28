@@ -1,11 +1,13 @@
 import { Component, AfterViewInit, ElementRef, Renderer2, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { RouterLink } from "@angular/router";
 
 
 @Component({
   selector: 'app-homer',
   templateUrl: './homer.html',
   styleUrls: ['./homer.css'],
+  imports: [RouterLink],
 
 })
 export class HomerComponent implements AfterViewInit {
