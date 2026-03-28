@@ -173,7 +173,4 @@ Feito com ☕ e boas práticas.
    git push origin main
    ```
 
-Pronto! Agora seu repositório tem uma documentação excelente e profissional.  
-Se quiser incluir imagens (screenshots do formulário, console H2, saída do script), posso ajudar a adicionar no markdown ou gerar uma versão com badges.
-
-Qual o próximo passo no projeto? Testar o deploy? Adicionar autenticação? Melhorar o design do Angular? 🚀
+Pronto! 
