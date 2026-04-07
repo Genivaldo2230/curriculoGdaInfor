@@ -1,10 +1,9 @@
 .main-body {
   max-width: 100%;
-  height: 10rem;
   display: flex;
   justify-content: space-around;
   align-items: self-end;
-  margin-top: 43rem;
+  margin-top: 11rem;
 }
 
 html,
@@ -14,7 +13,7 @@ body {
   height: 99%;
   width: 99%;
   overflow: hidden;
-  /* desativa scroll*/
+
 }
 
 .background-video {
@@ -30,7 +29,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* vídeo cobre toda tela */
+
 }
 
 
@@ -63,12 +62,12 @@ body {
 
 .card.soft {
   border-top: 4px solid #4caf50;
-  /* verde para soft skills */
+
 }
 
 .card.hard {
   border-top: 4px solid #2196f3;
-  /* azul para hard skills */
+
 }
 
 .card h3 {
@@ -76,14 +75,10 @@ body {
   color: #222;
 }
 
-/*
+
 .card p {
   font-size: 0.9rem;
-  color: #555;
-} */
-.card p {
-  font-size: 0.9rem;
-  color: #100101;
+  color: #fff;
   font-family: sans-serif;
   font-weight: bolder;
 }
@@ -148,8 +143,8 @@ h3 {
   right: 0;
   bottom: 0;
   background: rgba(33, 150, 243, 0.9);
-  /* azul translúcido */
-  color: #fff;
+
+  color: lch(91% 3.6 19.49);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -172,15 +167,184 @@ h3 {
 
 .soft .overlay {
   background: #ffffff;
-  /* verde translúcido para soft skills */
+
 }
 
 .hard .overlay {
   color: #af4c91;
   background: #ffffff;
-  /* azul translúcido para hard skills */
+
 }
 
 .overlay .p {
   color: #af4c91;
+}
+
+
+
+
+:root {
+  --bg-color: #f4f7f6;
+  --text-color: #333;
+  --card-bg: #ffffff;
+  --primary-color: #6c5ce7;
+
+  --accent-color: #00cec9;
+
+  --shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+
+/* --- Container dos Cards --- */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #222222ab;
+}
+
+
+.card {
+  background-color: var(--card-bg);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  border-top: 5px solid transparent;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon-box {
+  font-size: 2.5rem;
+  margin-right: 15px;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #636e72;
+  margin-bottom: 20px;
+}
+
+
+.tech-highlight {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+
+.card-action {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.card-action:hover {
+  letter-spacing: 1px;
+}
+
+
+.card-1 {
+  border-top-color: #ff7675;
+
+}
+
+.card-1 .icon-box,
+.card-1 .tech-highlight {
+  color: #ff7675;
+}
+
+.card-1 .card-action {
+  color: #ff7675;
+}
+
+.card-2 {
+  border-top-color: #0984e3;
+
+}
+
+.card-2 .icon-box,
+.card-2 .tech-highlight {
+  color: #0984e3;
+}
+
+.card-2 .card-action {
+  color: #0984e3;
+}
+
+.card-3 {
+  border-top-color: #6c5ce7;
+
+}
+
+.card-3 .icon-box,
+.card-3 .tech-highlight {
+  color: #6c5ce7;
+}
+
+.card-3 .card-action {
+  color: #6c5ce7;
+}
+
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  .card {
+    padding: 20px;
+  }
 }

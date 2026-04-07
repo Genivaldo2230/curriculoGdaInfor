@@ -1,86 +1,82 @@
 <div class="main-body">
-
   <div class="background-video">
     <video autoplay muted loop id="backgroundVideo">
       <source src="assets/videos/fundo.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
+
+      <track
+        kind="descriptions"
+        src="assets/videos/fundo-descricao.vtt"
+        srclang="pt"
+        label="Descrição do vídeo de fundo"
+      />
+
+      Seu navegador não suporta o elemento de vídeo.
     </video>
   </div>
-
- 
-
 </div>
 
-<!--
-  <div class="skills-container">
+<h1>Olà sou Genivaldo Anjos Quero que você me conheça melhor!</h1>
 
-    <!-- Soft Skills
-    <section class="skills-section soft_skill">
-      <h2>🌟 Soft Skills</h2>
-      <div class="skills-grid">
-        <div class="card soft">
-          <img src="assets/icons/communication.svg" alt="Comunicação" class="icon"/>
-          <div class="overlay">
-            <h3>Comunicação eficaz</h3>
-            <p>Clareza na troca de ideias e colaboração em equipe.</p>
-          </div>
-        </div>
+<div class="cards-container">
+  <article class="card card-1">
+    <div class="card-content">
+      <header class="card-header">
+        <div class="icon-box">🚀</div>
+        <h2 class="card-title">Eu sou<br />Mão na Massa</h2>
+      </header>
+      <p class="card-text">
+        Oi! Sou um desenvolvedor que realmente ama o que faz. Adoro o desafio de pegar uma ideia do
+        zero e transformá-la em realidade usando
+        <span class="tech-highlight">Java e Spring Boot</span>, sempre cuidando para que o usuário
+        tenha uma experiência incrível com <span class="tech-highlight">Angular</span>.
+      </p>
+      <p class="card-text">
+        Para mim, programar não é só bater código; é sobre resolver problemas de forma criativa e
+        aprender algo novo todo santo dia. Sou movido por café, curiosidade e a satisfação de ver um
+        projeto rodando liso!
+      </p>
+    </div>
+    <a routerLink="/sobre" class="card-action">SAIBA MAIS →</a>
+  </article>
 
-        <div class="card soft">
-          <img src="assets/icons/teamwork.svg" alt="Trabalho em equipe" class="icon"/>
-          <div class="overlay">
-            <h3>Trabalho em equipe</h3>
-            <p>Capacidade de cooperar em projetos multidisciplinares.</p>
-          </div>
-        </div>
+  <article class="card card-2">
+    <div class="card-content">
+      <header class="card-header">
+        <div class="icon-box">🤝</div>
+        <h2 class="card-title">Eu sou:<br />Parceiro de Equipe</h2>
+      </header>
+      <p class="card-text">
+        Acredito que grandes softwares são feitos por pessoas que se comunicam bem e se ajudam.
+        Minha base técnica é forte em
+        <span class="tech-highlight">TypeScript e ecossistema Java</span>, mas o que eu mais curto é
+        o 'troca-troca' de ideias e o trabalho em equipe.
+      </p>
+      <p class="card-text">
+        Sou do tipo que joga junto, comunica com clareza e encara cada bug como uma oportunidade de
+        encontrar uma solução inteligente em grupo. Vamos construir algo incrível juntos?
+      </p>
+    </div>
+    <a routerLink="/fale-comigo" class="card-action">CONVERSAR →</a>
+  </article>
 
-        <div class="card soft">
-          <img src="assets/icons/problem-solving.svg" alt="Resolução de problemas" class="icon"/>
-          <div class="overlay">
-            <h3>Resolução de problemas</h3>
-            <p>Pensamento crítico para encontrar soluções criativas.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Hard Skills -->
-<!--
-    <section class="skills-section hard_skill">
-      <h2>⚙️ Hard Skills</h2>
-      <div class="skills-grid">
-        <div class="card hard">
-          <img src="assets/icons/angular.svg" alt="Angular" class="icon"/>
-          <div class="overlay">
-            <h3>Angular</h3>
-            <p>Desenvolvimento de interfaces modernas e responsivas.</p>
-          </div>
-        </div>
-
-        <div class="card hard">
-          <img src="assets/icons/typescript.svg" alt="TypeScript" class="icon" />
-          <div class="overlay">
-            <h3>TypeScript</h3>
-            <p>Código mais seguro e escalável com tipagem estática.</p>
-          </div>
-        </div>
-
-        <div class="card hard">
-          <img src="assets/icons/springboot.png" alt="Spring Boot" class="icon"/>
-          <div class="overlay">
-            <h3>Spring Boot</h3>
-            <p>Criação de APIs robustas e eficientes em Java.</p>
-          </div>
-        </div>
-
-        <div class="card hard">
-          <img src="assets/icons/java.svg" alt="Java" class="icon"/>
-          <div class="overlay">
-            <h3>Java</h3>
-            <p>Linguagem sólida para aplicações corporativas e sistemas complexos.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </div> -->
+  <article class="card card-3">
+    <div class="card-content">
+      <header class="card-header">
+        <div class="icon-box">🧠</div>
+        <h2 class="card-title">Eu tenho:<br />Equilíbrio Total</h2>
+      </header>
+      <p class="card-text">
+        Seja criando APIs robustas ou interfaces modernas, meu objetivo é sempre o mesmo: entregar
+        tecnologia com propósito. Sou fascinado pela organização do
+        <span class="tech-highlight">Spring Boot</span> e pela versatilidade do
+        <span class="tech-highlight">Angular</span>, mas não abro mão do lado humano.
+      </p>
+      <p class="card-text">
+        Valorizo demais a transparência e a criatividade no dia a dia. Sou um eterno aprendiz da
+        tecnologia e um entusiasta de projetos que desafiam minha lógica e minha capacidade de
+        colaborar!
+      </p>
+    </div>
+    <a routerLink="/portifolio" class="card-action">VER PORTFÓLIO →</a>
+  </article>
+</div>
