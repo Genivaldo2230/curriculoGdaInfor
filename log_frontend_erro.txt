@@ -1,0 +1,434 @@
+[1m[31mErro ao testar API: HttpErrorResponse {
+  headers: _HttpHeaders {
+    headers: Map(11) {
+      'cache-control' => [Array],
+      'connection' => [Array],
+      'content-length' => [Array],
+      'date' => [Array],
+      'expires' => [Array],
+      'keep-alive' => [Array],
+      'pragma' => [Array],
+      'vary' => [Array],
+      'x-content-type-options' => [Array],
+      'x-frame-options' => [Array],
+      'x-xss-protection' => [Array]
+    },
+    normalizedNames: Map(11) {
+      'cache-control' => 'cache-control',
+      'connection' => 'connection',
+      'content-length' => 'content-length',
+      'date' => 'date',
+      'expires' => 'expires',
+      'keep-alive' => 'keep-alive',
+      'pragma' => 'pragma',
+      'vary' => 'vary',
+      'x-content-type-options' => 'x-content-type-options',
+      'x-frame-options' => 'x-frame-options',
+      'x-xss-protection' => 'x-xss-protection'
+    },
+    lazyInit: undefined,
+    lazyUpdate: null
+  },
+  status: 403,
+  statusText: 'Unknown Error',
+  url: 'http://localhost:8080/api/ping',
+  ok: false,
+  type: undefined,
+  redirected: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:8080/api/ping: 403 ',
+  error: null
+}[39m[22m
+[1m[31mErro ao testar API: HttpErrorResponse {
+  headers: _HttpHeaders {
+    headers: Map(11) {
+      'cache-control' => [Array],
+      'connection' => [Array],
+      'content-length' => [Array],
+      'date' => [Array],
+      'expires' => [Array],
+      'keep-alive' => [Array],
+      'pragma' => [Array],
+      'vary' => [Array],
+      'x-content-type-options' => [Array],
+      'x-frame-options' => [Array],
+      'x-xss-protection' => [Array]
+    },
+    normalizedNames: Map(11) {
+      'cache-control' => 'cache-control',
+      'connection' => 'connection',
+      'content-length' => 'content-length',
+      'date' => 'date',
+      'expires' => 'expires',
+      'keep-alive' => 'keep-alive',
+      'pragma' => 'pragma',
+      'vary' => 'vary',
+      'x-content-type-options' => 'x-content-type-options',
+      'x-frame-options' => 'x-frame-options',
+      'x-xss-protection' => 'x-xss-protection'
+    },
+    lazyInit: undefined,
+    lazyUpdate: null
+  },
+  status: 403,
+  statusText: 'Unknown Error',
+  url: 'http://localhost:8080/api/ping',
+  ok: false,
+  type: undefined,
+  redirected: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:8080/api/ping: 403 ',
+  error: null
+}[39m[22m
+[1m[31mErro ao testar API: HttpErrorResponse {
+  headers: _HttpHeaders {
+    headers: Map(11) {
+      'cache-control' => [Array],
+      'connection' => [Array],
+      'content-length' => [Array],
+      'date' => [Array],
+      'expires' => [Array],
+      'keep-alive' => [Array],
+      'pragma' => [Array],
+      'vary' => [Array],
+      'x-content-type-options' => [Array],
+      'x-frame-options' => [Array],
+      'x-xss-protection' => [Array]
+    },
+    normalizedNames: Map(11) {
+      'cache-control' => 'cache-control',
+      'connection' => 'connection',
+      'content-length' => 'content-length',
+      'date' => 'date',
+      'expires' => 'expires',
+      'keep-alive' => 'keep-alive',
+      'pragma' => 'pragma',
+      'vary' => 'vary',
+      'x-content-type-options' => 'x-content-type-options',
+      'x-frame-options' => 'x-frame-options',
+      'x-xss-protection' => 'x-xss-protection'
+    },
+    lazyInit: undefined,
+    lazyUpdate: null
+  },
+  status: 403,
+  statusText: 'Unknown Error',
+  url: 'http://localhost:8080/api/ping',
+  ok: false,
+  type: undefined,
+  redirected: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:8080/api/ping: 403 ',
+  error: null
+}[39m[22m
+[1m[31mErro ao testar API: HttpErrorResponse {
+  headers: _HttpHeaders {
+    headers: Map(11) {
+      'cache-control' => [Array],
+      'connection' => [Array],
+      'content-length' => [Array],
+      'date' => [Array],
+      'expires' => [Array],
+      'keep-alive' => [Array],
+      'pragma' => [Array],
+      'vary' => [Array],
+      'x-content-type-options' => [Array],
+      'x-frame-options' => [Array],
+      'x-xss-protection' => [Array]
+    },
+    normalizedNames: Map(11) {
+      'cache-control' => 'cache-control',
+      'connection' => 'connection',
+      'content-length' => 'content-length',
+      'date' => 'date',
+      'expires' => 'expires',
+      'keep-alive' => 'keep-alive',
+      'pragma' => 'pragma',
+      'vary' => 'vary',
+      'x-content-type-options' => 'x-content-type-options',
+      'x-frame-options' => 'x-frame-options',
+      'x-xss-protection' => 'x-xss-protection'
+    },
+    lazyInit: undefined,
+    lazyUpdate: null
+  },
+  status: 403,
+  statusText: 'Unknown Error',
+  url: 'http://localhost:8080/api/ping',
+  ok: false,
+  type: undefined,
+  redirected: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:8080/api/ping: 403 ',
+  error: null
+}[39m[22m
+[1m[31mErro ao testar API: HttpErrorResponse {
+  headers: _HttpHeaders {
+    headers: Map(11) {
+      'cache-control' => [Array],
+      'connection' => [Array],
+      'content-length' => [Array],
+      'date' => [Array],
+      'expires' => [Array],
+      'keep-alive' => [Array],
+      'pragma' => [Array],
+      'vary' => [Array],
+      'x-content-type-options' => [Array],
+      'x-frame-options' => [Array],
+      'x-xss-protection' => [Array]
+    },
+    normalizedNames: Map(11) {
+      'cache-control' => 'cache-control',
+      'connection' => 'connection',
+      'content-length' => 'content-length',
+      'date' => 'date',
+      'expires' => 'expires',
+      'keep-alive' => 'keep-alive',
+      'pragma' => 'pragma',
+      'vary' => 'vary',
+      'x-content-type-options' => 'x-content-type-options',
+      'x-frame-options' => 'x-frame-options',
+      'x-xss-protection' => 'x-xss-protection'
+    },
+    lazyInit: undefined,
+    lazyUpdate: null
+  },
+  status: 403,
+  statusText: 'Unknown Error',
+  url: 'http://localhost:8080/api/ping',
+  ok: false,
+  type: undefined,
+  redirected: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:8080/api/ping: 403 ',
+  error: null
+}[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'email' does not exist on type 'LoginComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/login/login.html:4:56:
+[37m      4 │   <input type="text" placeholder="Usuário" [(ngModel)]=[32m"emai[37ml" />
+        ╵                                                        [32m~~~~~[0m
+
+  Error occurs in the template of component LoginComponent.
+
+    src/app/pages/login/login.ts:10:15:
+[37m      10 │   templateUrl: [32m'./login.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'email' does not exist on type 'LoginComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/login/login.html:4:56:
+[37m      4 │   <input type="text" placeholder="Usuário" [(ngModel)]=[32m"emai[37ml" />
+        ╵                                                        [32m~~~~~[0m
+
+  Error occurs in the template of component LoginComponent.
+
+    src/app/pages/login/login.ts:10:15:
+[37m      10 │   templateUrl: [32m'./login.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'Email' does not exist on type 'LoginComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/login/login.html:4:56:
+[37m      4 │   <input type="text" placeholder="Usuário" [(ngModel)]=[32m"Emai[37ml" />
+        ╵                                                        [32m~~~~~[0m
+
+  Error occurs in the template of component LoginComponent.
+
+    src/app/pages/login/login.ts:10:15:
+[37m      10 │   templateUrl: [32m'./login.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'Email' does not exist on type 'LoginComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/login/login.html:4:56:
+[37m      4 │   <input type="text" placeholder="Usuário" [(ngModel)]=[32m"Emai[37ml" />
+        ╵                                                        [32m~~~~~[0m
+
+  Error occurs in the template of component LoginComponent.
+
+    src/app/pages/login/login.ts:10:15:
+[37m      10 │   templateUrl: [32m'./login.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[31m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mNG5002: Unexpected character "EOF"[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/pages/login/login.html:25:2:
+[37m      25 │ </[32m[37m
+         ╵   [32m^[0m
+
+  Error occurs in the template of component LoginComponent.
+
+    src/app/pages/login/login.ts:10:15:
+[37m      10 │   templateUrl: [32m'./login.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~[0m
+
+[39m[22m
+[1m[31mErro ao testar API: HttpErrorResponse {
+  headers: _HttpHeaders {
+    headers: Map(11) {
+      'cache-control' => [Array],
+      'connection' => [Array],
+      'content-length' => [Array],
+      'date' => [Array],
+      'expires' => [Array],
+      'keep-alive' => [Array],
+      'pragma' => [Array],
+      'vary' => [Array],
+      'x-content-type-options' => [Array],
+      'x-frame-options' => [Array],
+      'x-xss-protection' => [Array]
+    },
+    normalizedNames: Map(11) {
+      'cache-control' => 'cache-control',
+      'connection' => 'connection',
+      'content-length' => 'content-length',
+      'date' => 'date',
+      'expires' => 'expires',
+      'keep-alive' => 'keep-alive',
+      'pragma' => 'pragma',
+      'vary' => 'vary',
+      'x-content-type-options' => 'x-content-type-options',
+      'x-frame-options' => 'x-frame-options',
+      'x-xss-protection' => 'x-xss-protection'
+    },
+    lazyInit: undefined,
+    lazyUpdate: null
+  },
+  status: 403,
+  statusText: 'Unknown Error',
+  url: 'http://localhost:8080/api/ping',
+  ok: false,
+  type: undefined,
+  redirected: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:8080/api/ping: 403 ',
+  error: null
+}[39m[22m
+[1m[31mErro ao testar API: HttpErrorResponse {
+  headers: _HttpHeaders {
+    headers: Map(11) {
+      'cache-control' => [Array],
+      'connection' => [Array],
+      'content-length' => [Array],
+      'date' => [Array],
+      'expires' => [Array],
+      'keep-alive' => [Array],
+      'pragma' => [Array],
+      'vary' => [Array],
+      'x-content-type-options' => [Array],
+      'x-frame-options' => [Array],
+      'x-xss-protection' => [Array]
+    },
+    normalizedNames: Map(11) {
+      'cache-control' => 'cache-control',
+      'connection' => 'connection',
+      'content-length' => 'content-length',
+      'date' => 'date',
+      'expires' => 'expires',
+      'keep-alive' => 'keep-alive',
+      'pragma' => 'pragma',
+      'vary' => 'vary',
+      'x-content-type-options' => 'x-content-type-options',
+      'x-frame-options' => 'x-frame-options',
+      'x-xss-protection' => 'x-xss-protection'
+    },
+    lazyInit: undefined,
+    lazyUpdate: null
+  },
+  status: 403,
+  statusText: 'Unknown Error',
+  url: 'http://localhost:8080/api/ping',
+  ok: false,
+  type: undefined,
+  redirected: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:8080/api/ping: 403 ',
+  error: null
+}[39m[22m
+[1m[31mErro ao testar API: HttpErrorResponse {
+  headers: _HttpHeaders {
+    headers: Map(11) {
+      'cache-control' => [Array],
+      'connection' => [Array],
+      'content-length' => [Array],
+      'date' => [Array],
+      'expires' => [Array],
+      'keep-alive' => [Array],
+      'pragma' => [Array],
+      'vary' => [Array],
+      'x-content-type-options' => [Array],
+      'x-frame-options' => [Array],
+      'x-xss-protection' => [Array]
+    },
+    normalizedNames: Map(11) {
+      'cache-control' => 'cache-control',
+      'connection' => 'connection',
+      'content-length' => 'content-length',
+      'date' => 'date',
+      'expires' => 'expires',
+      'keep-alive' => 'keep-alive',
+      'pragma' => 'pragma',
+      'vary' => 'vary',
+      'x-content-type-options' => 'x-content-type-options',
+      'x-frame-options' => 'x-frame-options',
+      'x-xss-protection' => 'x-xss-protection'
+    },
+    lazyInit: undefined,
+    lazyUpdate: null
+  },
+  status: 403,
+  statusText: 'Unknown Error',
+  url: 'http://localhost:8080/api/ping',
+  ok: false,
+  type: undefined,
+  redirected: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:8080/api/ping: 403 ',
+  error: null
+}[39m[22m
+[1m[31mErro ao testar API: HttpErrorResponse {
+  headers: _HttpHeaders {
+    headers: Map(11) {
+      'cache-control' => [Array],
+      'connection' => [Array],
+      'content-length' => [Array],
+      'date' => [Array],
+      'expires' => [Array],
+      'keep-alive' => [Array],
+      'pragma' => [Array],
+      'vary' => [Array],
+      'x-content-type-options' => [Array],
+      'x-frame-options' => [Array],
+      'x-xss-protection' => [Array]
+    },
+    normalizedNames: Map(11) {
+      'cache-control' => 'cache-control',
+      'connection' => 'connection',
+      'content-length' => 'content-length',
+      'date' => 'date',
+      'expires' => 'expires',
+      'keep-alive' => 'keep-alive',
+      'pragma' => 'pragma',
+      'vary' => 'vary',
+      'x-content-type-options' => 'x-content-type-options',
+      'x-frame-options' => 'x-frame-options',
+      'x-xss-protection' => 'x-xss-protection'
+    },
+    lazyInit: undefined,
+    lazyUpdate: null
+  },
+  status: 403,
+  statusText: 'Unknown Error',
+  url: 'http://localhost:8080/api/ping',
+  ok: false,
+  type: undefined,
+  redirected: false,
+  name: 'HttpErrorResponse',
+  message: 'Http failure response for http://localhost:8080/api/ping: 403 ',
+  error: null
+}[39m[22m

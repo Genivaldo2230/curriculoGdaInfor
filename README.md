@@ -25,6 +25,7 @@ curriculum-gdainfor/
 ````
 
 ## 🛠️ Tecnologias Utilizadas
+
 ```text
 Front-End: Angular CLI 20 (TypeScript)
 
@@ -36,7 +37,9 @@ Estilização: SCSS (Sass) com variáveis globais
 
 Integração: API REST / JSON / HttpClient
 ````
+
 📊 Fluxo de Dados e Modelo
+
 ```text
 O sistema utiliza um modelo de dados padronizado para garantir a integridade das informações.
 
@@ -50,7 +53,9 @@ email: Endereço de correio eletrônico.
 
 mensagem: Conteúdo da mensagem enviada.
 ````
-## Diagrama de Fluxo:
+
+## Diagrama de Fluxo
+
 ```text
 Snippet de código
 graph LR
@@ -60,7 +65,9 @@ graph LR
     D -->|Persistence| C
     C -->|Status 201 Created| A
 ````
+
 🔒 Configuração de Segurança (CORS)
+
 ```text
 Implementada configuração global no Back-End para permitir a comunicação segura entre as origens:
 
@@ -68,7 +75,9 @@ Origem permitida: http://localhost:4200 (Angular)
 
 Métodos liberados: GET, POST, PUT, DELETE, OPTIONS.
 ````
+
 🚀 Inicialização Automatizada (start.sh)
+
 ```text
 ## 🚀 Inicialização Local
 O arquivo `start.sh` está configurado com caminhos absolutos. Para rodar em sua máquina:
@@ -76,6 +85,7 @@ O arquivo `start.sh` está configurado com caminhos absolutos. Para rodar em sua
 2. Altere `BACKEND_PATH` e `FRONTEND_PATH` para os diretórios onde o projeto foi clonado.
 3. Execute `./start.sh` no terminal Git Bash.
 ````
+
 ```text
 Para facilitar a inicialização e evitar processos travados na memória, utilize o script de automação com comando trap:
 
@@ -87,6 +97,7 @@ O script iniciará o Spring Boot (8080) e o Angular (4200) simultaneamente. Ao u
 ````
 
 🌐 Endereços de Acesso
+
 ```text
 Front-End: http://localhost:4200
 
@@ -99,6 +110,8 @@ JDBC URL: jdbc:h2:mem:testdb
 User: sa | Password: (vazio)
 
 ````
+
 👨‍💻 Autor
+
 ```text
 Desenvolvido por Genivaldo Anjos. Focado em estudos de integração Full-Stack, automação de ambiente de desenvolvimento e arquiteturas modernas.
